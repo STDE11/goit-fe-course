@@ -2,12 +2,9 @@
      box-sizing: border-box;
      margin: 0;
      padding: 0;
-     /* outline: 1px solid red; */
  }
  
  .wrapper {
      width: 480px;
      margin: auto;
-     /* padding: 10px; */
-     /* outline: 1px solid rgb(41, 8, 190); */
  }
