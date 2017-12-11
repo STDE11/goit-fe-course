@@ -39,31 +39,30 @@ img {
 }
 
 
-/* task three var3 */
+/* task three */
 
 ul {
     list-style-type: none;
 }
 
 .list {
-    list-style-image: url(https://image.flaticon.com/icons/svg/128/128421.);
-    outline: 1px solid rgb(213, 228, 7);
     width: 240px;
     padding: 24px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 36px;
-    text-align: middle;
+    text-align: left;
     border-radius: 4px;
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1)
 }
 
 .list-item {
-    display: inline-block;
+    display: block;
     height: 20px;
     width: 192px;
-    /* background: url(https://image.flaticon.com/icons/svg/128/128421.svg) no-repeat; */
-    background-position: right center;
+    padding-left: 34px;
+    background: url(https://image.flaticon.com/icons/svg/128/128421.svg) no-repeat;
+    background-position: left center;
     font-size: 16px;
     font-style: italic;
     font-weight: bold;
@@ -74,7 +73,8 @@ ul {
     margin-bottom: 0;
 }
 
-li:before {
+
+/* li:before {
     display: inline-block;
     content: url(https://image.flaticon.com/icons/svg/128/128421.svg);
     margin-right: 16px;
@@ -82,4 +82,4 @@ li:before {
     width: 20px;
     background-color: transparent;
     background-position: left center;
-}
+} */
