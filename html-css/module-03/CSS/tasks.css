@@ -61,7 +61,7 @@ ul {
     height: 20px;
     width: 192px;
     padding-left: 34px;
-    background: url(https://image.flaticon.com/icons/svg/128/128421.svg) no-repeat;
+    background: url("../image/forward.png") no-repeat;
     background-position: left center;
     font-size: 16px;
     font-style: italic;
