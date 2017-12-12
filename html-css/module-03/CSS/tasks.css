@@ -53,7 +53,7 @@ ul {
     margin-bottom: 36px;
     text-align: left;
     border-radius: 4px;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 0 3px 3px rgba(3, 3, 3, 0.1)
 }
 
 .list-item {
