@@ -17,6 +17,8 @@ body {
 .wrapper {
     width: 480px;
     margin: auto;
+    padding-left: 36px;
+    padding-right: 36px;
     background-color: snow;
 }
 
@@ -25,14 +27,19 @@ body {
 }
 
 .article {
-    width: 480px;
-    padding-left: 36px;
-    padding-right: 36px;
+    width: 408px;
+    /* padding-left: 36px;
+    padding-right: 36px; */
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 48px;
-    border-radius: 4px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    /* border-radius: 4px; */
     /* box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.article:last-child {
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .article-title {
@@ -68,11 +75,12 @@ ul {
 }
 
 .list {
-    width: 240px;
+    width: 100%;
     /* padding-top: 12px; */
     padding-bottom: 36px;
     margin-right: auto;
     margin-left: auto;
+    columns: 2;
     /* margin-bottom: 36px; */
     /* border-radius: 4px; */
     /* box-shadow: 0 0 3px 3px rgba(3, 3, 3, 0.1) */
