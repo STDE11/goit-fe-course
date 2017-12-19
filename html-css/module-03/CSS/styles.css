@@ -1,2 +1,103 @@
-@import 'base.css';
-@import 'tasks.css';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background: #ccf url('../image/Homework-3-BCG-body.png') no-repeat center center local;
+    background-size: cover;
+    margin: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.wrapper {
+    width: 480px;
+    margin: auto;
+    background-color: snow;
+}
+
+.content {
+    padding-top: 56px;
+}
+
+.article {
+    width: 480px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
+    border-radius: 4px;
+    /* box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1); */
+}
+
+.article-title {
+    margin-top: 26px;
+    color: rgb(6, 45, 117);
+    font-size: 26px;
+}
+
+.article-title:first-child {
+    margin-top: 0;
+}
+
+.article-title-img {
+    margin-top: 22px;
+    margin-bottom: 16px;
+    color: rgb(6, 45, 117);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+    margin-top: 26px;
+    margin-bottom: 10px;
+}
+
+
+/* task three */
+
+ul {
+    list-style-type: none;
+    /* list-style-image: url("../image/forward.png"); */
+}
+
+.list {
+    width: 240px;
+    /* padding-top: 12px; */
+    padding-bottom: 36px;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-bottom: 36px; */
+    /* border-radius: 4px; */
+    /* box-shadow: 0 0 3px 3px rgba(3, 3, 3, 0.1) */
+}
+
+.list-item {
+    display: inline-block;
+    height: 20px;
+    width: 192px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(6, 45, 117);
+    margin-bottom: 6px;
+}
+
+.list-item::before {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    vertical-align: bottom;
+    content: url("../image/forward.png");
+    margin-right: 6px;
+}
+
+.list-item:last-child {
+    margin-bottom: 0;
+}
