@@ -1,0 +1,58 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        border: 1px solid rgb(48, 50, 216)
+    }
+    
+    body {
+        background: #ccf url('../image/Homework-4-BCG-s.png') no-repeat center center local;
+        background-size: cover;
+        margin: 0;
+        /* padding-top: 200px; */
+        /* padding-bottom: 200px; */
+        /* position: absolute;
+        top: 230px;
+        left: 50%; */
+    }
+    
+    .wrapper {
+        width: 1024px;
+        margin: auto;
+        padding-top: 180px;
+        padding-left: 36px;
+        padding-right: 36px;
+        background-color: snow;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%) translateY(230px);
+    }
+    
+    .content {
+        /* padding-top: 230px; */
+    }
+    
+    img {
+        display: block;
+        width: 360px;
+        height: 281px;
+    }
+    
+    .left {
+        display: inline-block;
+        width: 750px;
+        vertical-align: top;
+    }
+    
+    .right {
+        display: inline-block;
+        width: 190px;
+        vertical-align: top;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
