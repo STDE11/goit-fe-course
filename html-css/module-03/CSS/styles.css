@@ -28,19 +28,15 @@ body {
 
 .article {
     width: 408px;
-    /* padding-left: 36px;
-    padding-right: 36px; */
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 24px;
     padding-top: 24px;
-    /* border-radius: 4px; */
-    /* box-shadow: -6px 0 5px 3px rgba(0, 0, 0, 0.1); */
 }
 
-.article:last-child {
+/* .article:last-child {
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .article-title {
     color: rgb(6, 45, 117);
