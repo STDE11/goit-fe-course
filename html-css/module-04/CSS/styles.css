@@ -2,7 +2,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Pathway Gothic One', sans-serif;
         font-size: 12px;
         line-height: 1.5;
     }
@@ -134,7 +134,7 @@
         height: 20px;
         width: 100%;
         font-size: 14px;
-        font-style: italic;
+        /* font-style: italic; */
         font-weight: 400;
         color: rgb(6, 45, 117);
         margin-bottom: 6px;
@@ -153,7 +153,7 @@
         height: 16px;
         width: 16px;
         vertical-align: center;
-        content: url("../image/forward.png");
+        content: '\2192';
         margin-right: 6px;
     }
     
@@ -161,12 +161,16 @@
         position: relative;
     }
     
+    .testimonial {
+        margin-bottom: 0;
+    }
+    
     .testimonial-img {
         display: block;
         width: 100%;
-        height: 248px;
+        height: 224px;
         position: absolute;
-        top: 45%;
+        top: 145%;
         left: 0;
         margin-right: 0;
         margin-bottom: 0px;
@@ -181,29 +185,32 @@
         padding: 24px;
         position: absolute;
         left: 0;
-        top: 62px;
+        top: 54px;
     }
     
     .quotation::before {
-        content: '"';
+        content: '\201C';
         margin-right: 6px;
     }
     
     .quotation::after {
-        content: '"';
+        content: '\201D';
         margin-left: 6px;
     }
     
     figcaption {
         display: block;
+        width: 120px;
         font-size: 16px;
+        border: 20px;
         color: rgb(6, 45, 117);
         font-weight: 700;
         text-align: center;
         padding-bottom: 0;
         position: absolute;
-        left: 0;
+        left: 50%;
         top: 320px;
+        transform: translateX(-50%)
     }
     
     span {
