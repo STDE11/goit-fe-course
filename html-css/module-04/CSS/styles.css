@@ -68,11 +68,16 @@
     .article-title-img {
         margin-bottom: 12px;
         color: rgb(6, 45, 117);
-        font-size: 14px;
+        font-family: 'Arial', sans-serif;
+        font-size: 15px;
+        line-height: 19px;
         font-weight: 700;
     }
     
     .article-text {
+        font-family: 'Arial', sans-serif;
+        font-size: 13px;
+        line-height: 19px;
         padding-bottom: 16px;
     }
     
@@ -131,9 +136,11 @@
     
     .forward {
         display: inline-block;
-        height: 20px;
+        height: 32.8px;
         width: 100%;
-        font-size: 14px;
+        font-family: 'Arial', sans-serif;
+        font-size: 15px;
+        /* font-size: 14px; */
         /* font-style: italic; */
         font-weight: 400;
         color: rgb(6, 45, 117);
@@ -179,7 +186,9 @@
     .quotation {
         display: block;
         text-align: justify;
-        font-size: 14px;
+        font-family: 'Arial', sans-serif;
+        font-size: 15px;
+        line-height: 19px;
         color: rgb(6, 45, 117);
         font-weight: 700;
         padding: 24px;
@@ -200,7 +209,8 @@
     
     figcaption {
         display: block;
-        width: 120px;
+        width: 150px;
+        font-family: 'Arial', sans-serif;
         font-size: 16px;
         border: 20px;
         color: rgb(6, 45, 117);
@@ -215,7 +225,8 @@
     
     span {
         display: inline-block;
-        font-size: 12px;
+        font-family: 'Arial', sans-serif;
+        font-size: 13px;
         text-align: center;
         line-height: 20px;
         font-weight: 400;
