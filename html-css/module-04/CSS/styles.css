@@ -28,16 +28,18 @@
         padding-bottom: 48px;
     }
     
-    .left {
+    .profile,
+    .offer {
         display: inline-block;
         width: 672px;
         vertical-align: top;
         margin-right: 36px;
     }
     
-    .right {
-        width: 214px;
+    .testimonial,
+    .principles {
         display: inline-block;
+        width: 214px;
         vertical-align: top;
     }
     
@@ -93,9 +95,6 @@
     .number-item {
         margin-bottom: 36px;
     }
-    /* .number-item:last-child {
-        margin-bottom: 0;
-    } */
     
     .number-item::before {
         display: inline-block;
@@ -147,12 +146,9 @@
     .forward:nth-child(5n+5),
     .forward:last-child,
     .number-item:last-child,
-    .testimonial {
+    .testimonial-title {
         margin-bottom: 0;
     }
-    /* .forward:last-child {
-        margin-bottom: 0;
-    } */
     
     .forward::before {
         display: inline-block;
@@ -164,12 +160,9 @@
         color: rgb(12, 8, 255);
     }
     
-    .principles {
+    .testimonial {
         position: relative;
     }
-    /* .testimonial {
-        margin-bottom: 0;
-    } */
     
     .testimonial-img {
         display: block;
