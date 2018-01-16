@@ -152,7 +152,7 @@
     
     .forward::before {
         display: inline-block;
-        height: 16px;
+        height: 32.8px;
         width: 16px;
         vertical-align: center;
         content: '\2192';
