@@ -239,7 +239,7 @@ span {
     display: block;
     width: 144px;
     height: 270px;
-    background-color: rgb(19, 13, 41);
+    background-color: rgb(8, 51, 87);
     position: absolute;
 }
 
@@ -247,7 +247,7 @@ span {
     display: block;
     padding-top: 18px;
     padding-bottom: 18px;
-    font-family: 'Open Sans Condensed Light', sans-serif;
+    font-family: 'Myriad Pro', sans-serif;
     font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
