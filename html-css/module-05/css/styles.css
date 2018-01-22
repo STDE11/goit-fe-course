@@ -126,6 +126,43 @@ main {
 
 /* slider */
 
+figura {
+    display: block;
+    background-size: cover;
+    width: 904px;
+    height: 577px;
+    /* height: 100%; */
+    position: relative;
+}
+
+
+/* .slider {
+    display: block;
+    width: 901px;
+    height: 577px;
+} */
+
+.boat {
+    /* display: block; */
+    position: absolute;
+    z-index: 4;
+}
+
+.rome {
+    position: absolute;
+    z-index: 3;
+}
+
+.church {
+    position: absolute;
+    z-index: 2;
+}
+
+.venice {
+    position: absolute;
+    z-index: 1;
+}
+
 figcaption {
     display: inline-block;
     width: 228px;
@@ -137,8 +174,9 @@ figcaption {
     text-align: center;
     vertical-align: middle;
     position: absolute;
-    top: 274px;
-    left: 60px;
+    top: 214px;
+    /* left: 60px; */
+    z-index: 6;
 }
 
 span {
@@ -150,6 +188,7 @@ span {
     background-color: #0c87fa;
     text-transform: uppercase;
     top: 594px;
+    z-index: 6;
 }
 
 
@@ -163,6 +202,7 @@ span {
     position: absolute;
     top: 508px;
     left: 98px;
+    z-index: 6;
 }
 
 .forwards,
@@ -224,7 +264,7 @@ span {
     width: 288px;
     height: 270px;
     position: relative;
-    margin-right: 18px;
+    margin-right: 16px;
 }
 
 .destinations-item:last-child {
