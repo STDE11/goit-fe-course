@@ -6,7 +6,6 @@
     font-size: 12px;
     line-height: 1.5;
     text-decoration: none;
-    /* outline: 1px solid #2bdb13 */
 }
 
 body {
@@ -110,7 +109,7 @@ ul {
     width: 66px;
     height: 88px;
     padding-top: 8px;
-    background-image: url(../image/Homework-5-tolk.png);
+    background: url(../image/Homework-5-tolk.png) no-repeat center center;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -126,44 +125,19 @@ main {
 
 /* slider */
 
-figura {
+.slider {
     display: block;
-    background-size: cover;
     width: 904px;
-    height: 577px;
-    /* height: 100%; */
     position: relative;
 }
 
-
-/* .slider {
-    display: block;
-    width: 901px;
-    height: 577px;
-} */
-
 .boat {
-    /* display: block; */
-    position: absolute;
-    z-index: 4;
+    display: block;
+    background-size: cover;
+    width: 904px;
 }
 
-.rome {
-    position: absolute;
-    z-index: 3;
-}
-
-.church {
-    position: absolute;
-    z-index: 2;
-}
-
-.venice {
-    position: absolute;
-    z-index: 1;
-}
-
-figcaption {
+p {
     display: inline-block;
     width: 228px;
     line-height: 62px;
@@ -175,8 +149,6 @@ figcaption {
     vertical-align: middle;
     position: absolute;
     top: 214px;
-    /* left: 60px; */
-    z-index: 6;
 }
 
 span {
@@ -188,7 +160,6 @@ span {
     background-color: #0c87fa;
     text-transform: uppercase;
     top: 594px;
-    z-index: 6;
 }
 
 
@@ -200,8 +171,8 @@ span {
     background-color: #0c87fa;
     border-radius: 50%;
     position: absolute;
-    top: 508px;
-    left: 98px;
+    top: 448px;
+    left: 38px;
     z-index: 6;
 }
 
@@ -226,27 +197,30 @@ span {
 
 .forwards:hover,
 .beckwards:hover {
-    background-color: rgb(19, 13, 41);
+    background-color: rgb(8, 51, 87);
 }
 
-.beckwards-img {
+.beckwards-img,
+.forwards-img {
     position: absolute;
     top: 50%;
     left: 70%;
+}
+
+.beckwards-img {
     transform: translate(-50%, -50%)
 }
 
 .forwards-img {
-    position: absolute;
-    top: 50%;
-    right: 70%;
-    transform: translate(50%, -50%)
+    transform: translate(-160%, -50%)
 }
 
 
 /* destinations  */
 
 .destinations {
+    display: block;
+    width: 100%;
     padding-top: 58px;
     position: relative;
 }
@@ -264,7 +238,7 @@ span {
     width: 288px;
     height: 270px;
     position: relative;
-    margin-right: 16px;
+    margin-right: 18px;
 }
 
 .destinations-item:last-child {
@@ -336,16 +310,16 @@ span {
 }
 
 
-/* button-return */
+/* button to-top */
 
-.return {
+.to-top {
     display: block;
     position: fixed;
     bottom: 10%;
-    right: 20%;
+    right: 16.3%;
 }
 
-.button-return {
+.button-to-top {
     display: block;
     width: 30px;
     height: 30px;
@@ -354,7 +328,7 @@ span {
     position: relative;
 }
 
-.return-img {
+.to-top-img {
     display: block;
     position: absolute;
     top: 50%;
