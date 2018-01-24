@@ -137,7 +137,7 @@ main {
     width: 904px;
 }
 
-p {
+.slider-text {
     display: inline-block;
     width: 228px;
     line-height: 62px;
