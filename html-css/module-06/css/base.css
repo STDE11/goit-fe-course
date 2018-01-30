@@ -1,0 +1,265 @@
+:root {
+    --primary-light-color: #ffffff;
+    --primary-dark-color: #052750;
+    --secondary-dark-color: #30455b;
+    --blue: #1789fc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../image/bg-body.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+wrapper {
+    display: block;
+    width: 1024px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 236px;
+}
+
+
+/*----------nav---------*/
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* menu */
+
+ul {
+    list-style: none;
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-item {
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.menu-link {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--primary-light-color);
+}
+
+.menu-item:hover>a {
+    color: var(--primary-dark-color);
+}
+
+
+/* logo */
+
+.center {
+    display: flex;
+    width: 140px;
+    height: 140px;
+    background-color: var(--primary-light-color);
+    border-radius: 50%;
+}
+
+.logo {
+    font-family: 'Dorsa', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    color: var(--primary-dark-color);
+    text-transform: uppercase;
+    margin: auto;
+}
+
+
+/* submenu */
+
+.submenu {
+    display: none;
+}
+
+.submenu-link {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--primary-dark-color);
+}
+
+.submenu-item:hover>a {
+    display: inline-block;
+    width: 100%;
+    background-color: var( --secondary-dark-color);
+    color: var(--primary-light-color);
+}
+
+.menu-item:hover>.submenu {
+    display: block;
+    width: 66px;
+    height: 88px;
+    padding-top: 8px;
+    background: url(../image/css_sprites.png) -243px -1376px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main {
+    width: 1024px;
+    padding: 30px 60px 0 60px;
+    background-color: var(--primary-light-color);
+    position: relative;
+}
+
+.content-home {
+    display: block;
+    width: 100%;
+    height: 900px;
+}
+
+
+/*---------footer----------*/
+
+
+/* button to-top */
+
+.to-top {
+    display: block;
+    position: fixed;
+    bottom: 10%;
+    right: 20%;
+}
+
+.button-to-top {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.button-to-top:hover {
+    background-color: var(--secondary-dark-color);
+}
+
+.bg-Homework_6_return {
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    background: url(../image/css_sprites.png) -645px -1376px;
+}
+
+.footer-box {
+    display: flex;
+    width: 1024px;
+    height: 134px;
+    align-content: center;
+    background-color: var(--secondary-dark-color);
+}
+
+.footer-list {
+    display: flex;
+    width: 792px;
+    height: 44px;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.footer-item {
+    width: 192px;
+    height: 22px;
+}
+
+.footer-link {
+    font-family: '  ', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--primary-light-color);
+    text-align: center;
+}
+
+.contact {
+    font-size: 18px;
+}
+
+.tel {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+}
+
+
+/* footer-icons */
+
+.footer-icons {
+    display: flex;
+}
+
+.icons {
+    display: flex;
+    width: 200px;
+    height: 65px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+}
+
+.icon {
+    width: 41px;
+    height: 40px;
+}
+
+.facebook {
+    background: url(../image/css_sprites.png) -329px -1376px;
+}
+
+.googleplus {
+    background: url(../image/css_sprites.png) -390px -1376px;
+}
+
+.instagram {
+    background: url(../image/css_sprites.png) -451px -1376px;
+}
+
+.twitter {
+    background: url(../image/css_sprites.png) -512px -1376px;
+}
+
+.footer-text {
+    display: block;
+    width: 400px;
+    height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: var(--primary-light-color);
+    margin: auto;
+    margin-top: 16px;
+}
