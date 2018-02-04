@@ -3,6 +3,7 @@
     --primary-dark-color: #052750;
     --secondary-dark-color: #30455b;
     --blue: #1789fc;
+    --grey: rgb(136, 130, 130);
 }
 
 * {
@@ -13,6 +14,7 @@
     font-size: 12px;
     line-height: 1.5;
     text-decoration: none;
+    /* outline: red 1px solid; */
 }
 
 body {
@@ -131,6 +133,16 @@ main {
     padding: 30px 60px 0 60px;
     background-color: var(--primary-light-color);
     position: relative;
+}
+
+article {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+div.article {
+    margin-top: 40px;
 }
 
 .content-home {
