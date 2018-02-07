@@ -24,7 +24,7 @@ h3.categories {
     margin-bottom: 30px;
 } */
 
-main.content-blog {
+main.content {
     width: 654px;
     padding-left: 0;
     padding-right: 0;
@@ -73,7 +73,8 @@ main.content-blog {
     justify-content: space-between;
 }
 
-h3.blog {}
+
+/* h3.blog {} */
 
 h4.blog {
     margin-bottom: 0;
@@ -131,7 +132,7 @@ h4.blog {
     left: 294px;
 }
 
-aside.aside-blog {
+aside {
     width: 210px;
     padding-top: 30px;
     /* background-color: var(--primary-light-color);

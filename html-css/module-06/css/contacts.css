@@ -1,0 +1,21 @@
+input {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.button-form {
+    display: flex;
+    justify-content: flex-end;
+}
+
+table {
+    display: block;
+    width: 196px;
+}
+
+td {
+    width: 98px;
+    height: auto;
+}
