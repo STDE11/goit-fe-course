@@ -50,17 +50,18 @@ main.content {
 }
 
 .title-blog::before {
-    width: 30px;
-    height: 30px;
+    width: 16px;
+    height: 16px;
     margin-right: 10px;
     background-color: var(--blue);
-    line-height: 30px;
+    line-height: 10px;
     /* counter-increment: list-counter; */
     content: '23 APR';
     border-radius: 50%;
-    border: 5px;
+    /* border: 5px; */
     color: var(--primary-light-color);
     text-align: center;
+    padding: 7px;
 }
 
 
@@ -115,21 +116,24 @@ h4.blog {
 
 .detals {
     display: block;
-    /* padding-top: 2px; */
-    width: 60px;
-    height: 20px;
     font-family: 'Arial Regular', sans-serif;
     font-size: 12px;
     font-weight: 700;
     text-align: center;
-    color: rgb(0, 0, 0);
-    background-color: #fff;
+    color: var(--text);
+    background-color: var(--primary-light-color);
     /* position: absolute; */
     border-radius: 4px;
-    border: 1px solid rgb(150, 140, 140);
+    border: 1px solid var(--grey);
+}
+
+.detals--blog {
+    width: 60px;
+    height: 20px;
     margin-left: 47%;
     top: 268px;
     left: 294px;
+    /* padding-top: 2px; */
 }
 
 aside {

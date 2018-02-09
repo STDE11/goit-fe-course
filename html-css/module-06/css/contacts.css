@@ -1,3 +1,9 @@
+map.brooklyn {
+    display: flex;
+    width: 40.875rem;
+    height: 100%;
+}
+
 input {
     display: block;
     width: 100%;
@@ -10,12 +16,66 @@ input {
     justify-content: flex-end;
 }
 
-table {
-    display: block;
-    width: 196px;
+.detals--submit,
+.detals--clear {
+    width: 6.5rem;
+    height: 2.45rem;
+    font-size: 1.2rem;
 }
 
-td {
-    width: 98px;
+.detals--clear {
+    margin-right: 1.6rem;
+    /* display: block; */
+    /* width: 60px; */
+    /* height: 20px; */
+    /* font-family: 'Arial Regular', sans-serif; */
+    /* font-size: 12px; */
+    /* font-weight: 700; */
+    /* text-align: center; */
+    /* color: var(--text); */
+    /* background-color: var(--primary-light-color); */
+    /* position: absolute; */
+    /* border-radius: 4px; */
+    /* border: 1px solid var(--grey); */
+}
+
+table {
+    display: block;
+    width: 15.7rem;
+}
+
+.caption {
     height: auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.15rem;
+    text-align: start;
+    line-height: 1.125rem;
+    font-weight: 400;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.caption--mr {
+    padding-bottom: 1.25rem;
+}
+
+.caption--vp {
+    padding-top: 0.25rem;
+    margin-top: 3rem;
+}
+
+.td-contacts {
+    width: 7.85rem;
+    height: auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.974rem;
+    /* text-align: center; */
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.table-contacts {
+    color: var(--red);
+    margin-left: 0.5rem;
 }

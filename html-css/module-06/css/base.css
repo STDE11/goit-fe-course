@@ -4,6 +4,8 @@
     --secondary-dark-color: #30455b;
     --blue: #1789fc;
     --grey: rgb(136, 130, 130);
+    --red: #ca0a0a;
+    --text: #000000;
 }
 
 * {

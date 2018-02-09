@@ -76,16 +76,17 @@
 }
 
 .number-item::before {
-    width: 30px;
-    height: 30px;
+    width: 16px;
+    height: 16px;
     margin-right: 10px;
     background-color: var(--blue);
-    line-height: 30px;
+    line-height: 15px;
     counter-increment: list-counter;
     content: counter(list-counter);
     border-radius: 50%;
     color: var(--primary-light-color);
     text-align: center;
+    padding: 7px;
 }
 
 .offer {
