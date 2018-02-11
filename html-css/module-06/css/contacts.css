@@ -4,11 +4,17 @@ map.brooklyn {
     height: 100%;
 }
 
-input {
+input,
+textarea {
     display: block;
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.15rem;
+    color: var(--form);
+    text-indent: 0.5rem;
+    resize: none;
 }
 
 .button-form {

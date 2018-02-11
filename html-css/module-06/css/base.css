@@ -6,6 +6,7 @@
     --grey: rgb(136, 130, 130);
     --red: #ca0a0a;
     --text: #000000;
+    --form: #344260;
 }
 
 * {
@@ -16,7 +17,7 @@
     font-size: 12px;
     line-height: 1.5;
     text-decoration: none;
-    outline: red 1px solid;
+    /* outline: red 1px solid; */
 }
 
 body {
