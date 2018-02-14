@@ -1,0 +1,49 @@
+:root {
+    --logo: #fed136;
+    --title: #000000;
+    --text: #777777;
+    --bcg: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    text-decoration: none;
+    outline: red 1px solid;
+    border: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.wraper--header,
+.wraper--promo {
+    background-color: #fff;
+}
+
+.container {
+    width: 58.75rem;
+}
+
+.wraper--form {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}

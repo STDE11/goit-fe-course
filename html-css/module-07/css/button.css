@@ -1,0 +1,18 @@
+.button-block {
+    display: block;
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    padding: 1.67rem 5.34rem;
+    border-radius: 4px;
+    background-color: var(--logo);
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--bcg);
+    margin: auto;
+}
