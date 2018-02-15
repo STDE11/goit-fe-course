@@ -10,11 +10,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 0.75rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     text-decoration: none;
-    outline: red 1px solid;
     border: 0;
+}
+
+html {
+    font-size: 10px;
 }
 
 body {
@@ -33,17 +36,10 @@ body {
 }
 
 .container {
-    width: 58.75rem;
+    width: 94rem;
 }
 
 .wraper--form {
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: auto;
 }

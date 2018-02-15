@@ -1,13 +1,13 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding-top: 2.563rem;
+    padding-top: 3.8rem;
 }
 
 .logo {
     display: flex;
-    line-height: 2.563rem;
-    font-size: 1.625rem;
+    line-height: 4.1rem;
+    font-size: 2.6rem;
     font-style: italic;
     font-weight: 700;
     color: var(--logo);
@@ -25,17 +25,9 @@ ul {
 
 .menu {
     display: flex;
-    width: 30.313rem;
+    width: 48.5rem;
     justify-content: space-between;
     align-items: center;
-}
-
-.menu-link {
-    font-size: 0.875rem;
-    line-height: 2.563rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--title);
 }
 
 .menu-item:hover>.menu-link {
