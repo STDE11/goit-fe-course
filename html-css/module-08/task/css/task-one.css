@@ -1,0 +1,44 @@
+.wrapper-one {
+    max-width: 960px;
+    background-color: #82f0ea
+}
+
+.header-one {
+    display: block;
+    max-width: 960px;
+    height: 60px;
+    background-color: #fcec16;
+}
+
+.container-one {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.content-one {
+    width: 55%;
+    height: 200px;
+    background-color: #2d30ec;
+}
+
+.sidebar-first-one {
+    width: 20%;
+    height: 200px;
+    background-color: #5f54c2;
+}
+
+.sidebar-second-one {
+    width: 20%;
+    height: 200px;
+    background-color: #f73434;
+}
+
+.footer-one {
+    display: block;
+    max-width: 960px;
+    height: 60px;
+    background-color: #068626;
+}
