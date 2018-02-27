@@ -1,0 +1,183 @@
+.block-button {
+    text-align: center;
+    /* padding-top: 1rem; */
+    /* padding-bottom: 1rem; */
+}
+
+.button {
+    border-radius: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    position: relative;
+}
+
+.button-log,
+.button-sign {
+    width: 28.125%;
+    color: var(--text);
+    transition-property: border-color;
+    transition-duration: 0.5s;
+}
+
+.button-log:hover,
+.button-sign:hover {
+    transition-property: border-color;
+    transition-duration: 0.5s;
+    border: 2px solid var( --bord-button-hover);
+}
+
+.button--promo {
+    width: 87%;
+    background-color: var(--button);
+    color: var(--bcg);
+    border: 2px solid var(--button);
+    transition-property: background-color, color, border-color;
+    transition-duration: 0.5s;
+}
+
+
+/* .button--promo:hover {
+    transition-property: background-color, color, border-color;
+    transition-duration: 0.5s;
+    background-color: var(--bcg);
+    color: var(--button);
+    border: 2px solid var(--bcg);
+} */
+
+.button-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* width: 4rem;
+    height: 4rem; */
+    width: 31.25%;
+    height: 31.25%;
+    /* padding: 5px; */
+    border-radius: 60%;
+    border: 4px solid var(--bcg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition-property: border-color;
+    transition-duration: 0.5s;
+}
+
+
+/* .button-img:hover {
+    transition-property: border-color;
+    transition-duration: 0.5s;
+    border: 4px solid var( --bord-button-hover);
+} */
+
+.button::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: -0.4rem;
+    right: -0.4rem;
+    content: '';
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 4px solid rgba(0, 0, 0, 0);
+    transition-property: background-color, border-color;
+    transition-duration: 0.5s;
+}
+
+.button::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: -0.4rem;
+    right: -0.4rem;
+    content: '';
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+    border: 4px solid rgba(255, 255, 255, 0);
+}
+
+.button:active::before {
+    transition-property: background-color, border-color;
+    transition-duration: 0.5s;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+.button:hover::after {
+    transition-property: background-color, border-color;
+    transition-duration: 0.5s;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* .button--partner1 {
+    background-color: var(--partner1);
+    background-image: url(../image/icon-tv-Mobile-320.png);
+    border: 4px solid var(--partner1);
+} */
+
+.button--partner1 {
+    background-color: var(--partner1);
+    background-image: url(../../image/css_sprites.png) -52px -10px;
+    /* border: 4px solid var(--bcg); */
+}
+
+
+/* .button--partner2 {
+    background-color: var(--partner2);
+    background-image: url(../image/icon-colb-Mobile-320.png);
+    border: 4px solid var(--partner2);
+} */
+
+.button--partner2 {
+    background-color: var(--partner2);
+    background-image: url(../../image/css_sprites.png) -10px -51px;
+    /* border: 4px solid var(--bcg); */
+}
+
+
+/* .button--partner3 {
+    background-color: var(--partner3);
+    background-image: url(../image/icon-tea-Mobile-320.png);
+    border: 4px solid var(--partner3);
+} */
+
+.button--partner3 {
+    background-color: var(--partner3);
+    background-image: url(../../image/icon-tea-Mobile-320.png);
+    /* border: 4px solid var(--bcg); */
+}
+
+
+/* .button--partner4 {
+    background-color: var(--partner4);
+    background-image: url(../image/icon-shape-Mobile-320.png);
+    border: 4px solid var(--partner4);
+} */
+
+.button--partner4 {
+    background-color: var(--partner4);
+    background-image: url(../../image/icon-shape-Mobile-320.png);
+    /* border: 4px solid var(--bcg); */
+}
+
+.button--partners {
+    width: 87%;
+    background-color: var(--bcg);
+    color: var(--button);
+    border: 2px solid var(--button);
+    transition-property: background-colorb, border-color;
+    transition-duration: 0.5s;
+}
+
+
+/* .button--partners:hover {
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    background-color: var(--button);
+    color: var(--bcg);
+} */
