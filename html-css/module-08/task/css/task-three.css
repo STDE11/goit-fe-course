@@ -24,13 +24,13 @@
     background-color: #2d3fdf;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .header-three {
-        max-width: 960px;
+        max-width: 1280px;
     }
     .container-three {
         display: flex;
-        max-width: 960px;
+        max-width: 1280px;
     }
     .content-three {
         width: 40%;

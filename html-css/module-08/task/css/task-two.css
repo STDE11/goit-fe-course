@@ -17,10 +17,10 @@
     background-color: #50df2d;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .container-two {
         display: flex;
-        max-width: 960px;
+        max-width: 1280px;
     }
     .content-two {
         width: 70%;
