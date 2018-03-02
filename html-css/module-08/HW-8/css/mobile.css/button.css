@@ -30,6 +30,8 @@
 
 .button--promo {
     width: 87%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: var(--button);
     color: var(--bcg);
     border: 2px solid var(--button);
@@ -118,8 +120,8 @@
     border-color: rgba(0, 0, 0, 0);
 } */
 
-.button-hover::before,
-.button-hover::after,
+.button-header::before,
+.button-header::after,
 .button--promo::before,
 .button--promo::after {
     bottom: -0.2rem;
@@ -218,6 +220,8 @@
 
 .button--partners {
     width: 87%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     background-color: var(--bcg);
     color: var(--button);
     border: 2px solid var(--button);
