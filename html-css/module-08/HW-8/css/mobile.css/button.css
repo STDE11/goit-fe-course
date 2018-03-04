@@ -1,7 +1,5 @@
 .block-button {
     text-align: center;
-    /* padding-top: 1rem; */
-    /* padding-bottom: 1rem; */
 }
 
 .button {
@@ -15,7 +13,7 @@
 
 .button-log,
 .button-sign {
-    width: 28.125%;
+    width: 8rem;
     color: var(--text);
     transition-property: border-color;
     transition-duration: 0.5s;
@@ -39,15 +37,6 @@
     transition-duration: 0.5s;
 }
 
-
-/* .button--promo:hover {
-    transition-property: background-color, color, border-color;
-    transition-duration: 0.5s;
-    background-color: var(--bcg);
-    color: var(--button);
-    border: 2px solid var(--bcg);
-} */
-
 .button-img {
     display: block;
     position: absolute;
@@ -61,17 +50,7 @@
     background-size: contain;
     transition-property: border-color;
     transition-duration: 0.5s;
-    /* width: 4rem;
-    height: 4rem; */
-    /* padding: 5px; */
 }
-
-
-/* .button-img:hover {
-    transition-property: border-color;
-    transition-duration: 0.5s;
-    border: 4px solid var( --bord-button-hover);
-} */
 
 .button::before,
 .button::after {
@@ -95,7 +74,6 @@
 .button::after {
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0);
-    /* border: 2px solid rgba(255, 255, 255, 0); */
 }
 
 .button-img::before,
@@ -103,22 +81,7 @@
     bottom: -0.4rem;
     right: -0.4rem;
     border: 4px solid rgba(0, 0, 0, 0);
-    /* background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0); */
 }
-
-
-/* .button-img::after {
-    background-color: rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, 0);
-    border: 4px solid rgba(0, 0, 0, 0);
-} */
-
-
-/* .button--promo::before {
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
-} */
 
 .button-header::before,
 .button-header::after,
@@ -127,21 +90,11 @@
     bottom: -0.2rem;
     right: -0.2rem;
     border: 2px solid rgba(0, 0, 0, 0);
-    /* background-color: rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, 0); */
 }
-
-
-/* .button--partners::before {
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
-} */
 
 .button--partners::before,
 .button--partners::after {
     border: 2px solid rgba(0, 0, 0, 0);
-    /* background-color: rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, 0); */
 }
 
 .button:active::before {
@@ -149,7 +102,6 @@
     transition-duration: 0.5s;
     background-color: rgba(0, 0, 0, 0.3);
     border-color: rgba(0, 0, 0, 0.1);
-    /* border: 2px solid rgba(0, 0, 0, 0.3); */
 }
 
 .button:hover::after {
@@ -157,65 +109,22 @@
     transition-duration: 0.5s;
     background-color: rgba(255, 255, 255, 0.3);
     border-color: rgba(255, 255, 255, 0.1);
-    /* border: 2px solid rgba(255, 255, 255, 0.3); */
 }
-
-
-/* .button--partner1 {
-    background-color: var(--partner1);
-    background-image: url(../image/icon-tv-Mobile-320.png);
-    border: 4px solid var(--partner1);
-} */
 
 .button--partner1 {
     background: url(../../image/css_sprites.png) var(--partner1) -47px -4px;
-    /* background-color: var(--partner1); */
-    /* border: 4px solid var(--bcg); */
 }
-
-
-/* .button--partner2 {
-    background-color: var(--partner2);
-    background-image: url(../image/icon-colb-Mobile-320.png);
-    border: 4px solid var(--partner2);
-} */
 
 .button--partner2 {
     background: url(../../image/css_sprites.png) var(--partner2) -5px -47px;
-    /* background-color: var(--partner2); */
-    /* background-image: url(../../image/css_sprites.png) -10px -51px; */
-    /* border: 4px solid var(--bcg); */
 }
-
-
-/* .button-partner2-color {
-    background-color: var(--partner2);
-} */
-
-
-/* .button--partner3 {
-    background-color: var(--partner3);
-    background-image: url(../image/icon-tea-Mobile-320.png);
-    border: 4px solid var(--partner3);
-} */
 
 .button--partner3 {
     background: url(../../image/css_sprites.png)var(--partner3)-5px -6px;
-    /* background-color: var(--partner3); */
-    /* border: 4px solid var(--bcg); */
 }
-
-
-/* .button--partner4 {
-    background-color: var(--partner4);
-    background-image: url(../image/icon-shape-Mobile-320.png);
-    border: 4px solid var(--partner4);
-} */
 
 .button--partner4 {
     background: url(../../image/css_sprites.png)var(--partner4)-46px -47px;
-    /* background-color: var(--partner4); */
-    /* border: 4px solid var(--bcg); */
 }
 
 .button--partners {
@@ -228,11 +137,3 @@
     transition-property: background-colorb, border-color;
     transition-duration: 0.5s;
 }
-
-
-/* .button--partners:hover {
-    transition-property: background-color, color;
-    transition-duration: 0.5s;
-    background-color: var(--button);
-    color: var(--bcg);
-} */

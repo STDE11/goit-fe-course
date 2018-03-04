@@ -1,0 +1,21 @@
+.bg-icon_colb_Mobile_320 {
+    ширина: 21px; высота: 21px;
+    background: url ('css_sprites.png') -10px -51px;
+}
+
+»кс
+.bg-icon_shape_Mobile_320 {
+    ширина: 21px; высота: 21px;
+    background: url ('css_sprites.png') -51px -51px;
+}
+
+»кс
+.bg-icon_tea_Mobile_320 {
+    ширина: 22px; высота: 21px;
+    background: url ('css_sprites.png') -10px -10px;
+}
+
+»кс
+.bg-icon_tv_Mobile_320 {
+    ширина: 22px; высота: 21px;
+    background: url ('css_sprites.png') -52px -10px;

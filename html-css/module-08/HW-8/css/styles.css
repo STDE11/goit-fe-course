@@ -5,10 +5,6 @@
 @import 'typography.css';
 @import 'tablet.css/header.css';
 @import 'tablet.css/promo.css';
-@import 'desktop.css';
-@import 'mobile.css';
-@import '';
-@import '';
-@import '';
-@import '';
-@import '';
+@import 'tablet.css/button.css';
+@import 'desktop.css/button.css';
+@import 'desktop.css/promo.css';

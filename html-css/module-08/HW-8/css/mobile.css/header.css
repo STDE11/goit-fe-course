@@ -6,38 +6,13 @@
     .block-button--header {
         width: 100%;
         padding-bottom: 11.5rem;
-        /* display: inline-block; */
-        /* display: flex; */
-        /* list-style: none; */
-        /* padding-top: 1rem; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* margin: auto; */
     }
     
     a {
         display: inline-block;
         color: var(--text);
-        /* padding: 1rem; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
     }
-    /* .menu-link {
-        padding: 0.66rem 1.5rem;
-        border: 2px solid var(--bord-button);
-        border-radius: 20px;
-    } */
-    /* .menu-link:hover {
-        border: 2px solid var(--bord-button-hover);
-    } */
     
     .block-logo {
         text-align: center;
-        /* display: flex; */
-        /* display: block; */
-        /* justify-content: center; */
-        /* padding-top: 1rem; */
-        /* padding-bottom: 1rem; */
     }

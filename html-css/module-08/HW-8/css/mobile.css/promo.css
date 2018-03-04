@@ -13,6 +13,10 @@
         /* background-size: cover; */
         /* min-height: 540px; */
     }
+    /* .contaner {
+        width: 81.25%;
+        margin: auto;
+    } */
     
     .title-promo {
         text-transform: uppercase;
@@ -37,8 +41,8 @@
     
     .title-partner {
         color: var(--title);
-        margin-top: 1.95rem;
-        margin-bottom: 1.56rem;
+        padding-top: 1.95rem;
+        padding-bottom: 1.56rem;
         /* font-size: 1.4rem; */
         /* text-align: center; */
     }
@@ -58,8 +62,12 @@
         text-align: center;
     }
     
+    .partners-item {
+        padding-bottom: 3rem;
+    }
+    
     .text-partner {
-        padding: 0 6rem 3rem 6rem;
+        padding: 0 6rem 0 6rem;
     }
     
     .partner {

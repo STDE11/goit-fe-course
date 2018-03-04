@@ -1,42 +1,14 @@
-@media (min-width: 600px) {
+@media (min-width: 768px) {
     header {
         padding-top: 4rem;
         display: flex;
         flex-flow: row-reverse;
-        /* align-content: center; */
         align-items: center;
         justify-content: space-between;
-        width: 86.98%;
-        margin: auto;
         padding-bottom: 14rem;
     }
     .block-button--header {
-        width: 100%;
         padding-bottom: 0;
-        /* padding-bottom: 11.5rem; */
         text-align: end;
-        /* display: inline-block; */
-        /* display: flex; */
-        /* list-style: none; */
-        /* padding-top: 1rem; */
-        /* align-items: center; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* margin: auto; */
-    }
-    .title-promo {
-        font-size: 5.2rem;
-        width: 81%;
-    }
-    .title {
-        margin: auto;
-    }
-    .text {
-        font-size: 2.4rem;
-        padding-top: 2.46rem;
-    }
-    .button--promo,
-    .button--partners {
-        width: 29.17%;
     }
 }

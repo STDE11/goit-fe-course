@@ -20,7 +20,7 @@
     font-size: 1.2rem;
     line-height: 1.2;
     text-decoration: none;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     border: 0;
 }
 
@@ -30,10 +30,6 @@ html {
 
 wrapper {
     display: block;
-    /* width: 100%; */
     height: auto;
     min-width: 320px;
-    /* margin: auto; */
-    /* display: flex;
-         justify-content: center; */
 }
