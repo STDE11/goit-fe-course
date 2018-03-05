@@ -1,0 +1,135 @@
+.block-button {
+    text-align: center;
+}
+
+.button {
+    border-radius: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    position: relative;
+}
+
+.button-log,
+.button-sign {
+    width: 8rem;
+    color: var(--text);
+    transition-property: border-color;
+    transition-duration: 0.5s;
+}
+
+.button-log:hover,
+.button-sign:hover {
+    transition-property: border-color;
+    transition-duration: 0.5s;
+    border: 2px solid var( --bord-button-hover);
+}
+
+.button--promo,
+.button--partners {
+    width: 87%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid var(--button);
+}
+
+.button--promo {
+    background-color: var(--button);
+    color: var(--bcg);
+}
+
+.button--partners {
+    background-color: var(--bcg);
+    color: var(--button);
+}
+
+.button-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 31.25%;
+    height: 31.25%;
+    border-radius: 60%;
+    border: 4px solid var(--bcg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* transition-property: border-color;
+    transition-duration: 0.5s; */
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: -0.2rem;
+    right: -0.2rem;
+    content: '';
+    border-radius: 2rem;
+    transition-property: background-color, border-color;
+    transition-duration: 0.5s;
+}
+
+.button::before {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.button::after {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.button-img::before,
+.button-img::after {
+    bottom: -0.4rem;
+    right: -0.4rem;
+    border: 4px solid rgba(0, 0, 0, 0);
+}
+
+.button-header::before,
+.button-header::after,
+.button--promo::before,
+.button--promo::after {
+    bottom: -0.2rem;
+    right: -0.2rem;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.button--partners::before,
+.button--partners::after {
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.button:active::before {
+    transition-property: background-color, border-color;
+    transition-duration: 0.5s;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.button:hover::after {
+    transition-property: background-color, border-color;
+    transition-duration: 0.5s;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.button--partner1 {
+    background: url(../../image/css_sprites.png) var(--partner1) -47px -4px;
+}
+
+.button--partner2 {
+    background: url(../../image/css_sprites.png) var(--partner2) -5px -47px;
+}
+
+.button--partner3 {
+    background: url(../../image/css_sprites.png)var(--partner3)-5px -6px;
+}
+
+.button--partner4 {
+    background: url(../../image/css_sprites.png)var(--partner4)-46px -47px;
+}

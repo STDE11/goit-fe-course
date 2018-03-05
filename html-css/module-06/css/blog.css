@@ -201,10 +201,11 @@ li.archive::before {
 
 /* текст */
 
-.article-text:hover {
+
+/* .article-text:hover {
     color: #e21515;
     transition: all 0.3s ease-out;
-}
+} */
 
 
 /* кнопка */

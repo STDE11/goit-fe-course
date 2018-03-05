@@ -1,0 +1,18 @@
+/* @media (min-width: 768px) {
+    .button--promo,
+    .button--partners {
+        width: 32.17%;
+    }
+    .button--partner1 {
+        background: url(../../image/css_sprites.png) var(--partner1) -47px -4px;
+    }
+    .button--partner2 {
+        background: url(../../image/css_sprites.png) var(--partner2) -4px -46px;
+    }
+    .button--partner3 {
+        background: url(../../image/css_sprites.png)var(--partner3)-5px -5px;
+    }
+    .button--partner4 {
+        background: url(../../image/css_sprites.png)var(--partner4)-46px -45px;
+    }
+} */

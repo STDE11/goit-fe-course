@@ -1,0 +1,22 @@
+    header {
+        display: block;
+        padding-top: 2rem;
+        /* padding-bottom: 11.5rem; */
+    }
+    
+    .block-button--header {
+        width: 100%;
+        padding-bottom: 11.5rem;
+        /* order: 1; */
+    }
+    
+    a {
+        /* display: inline-block; */
+        color: var(--text);
+    }
+    
+    .block-logo {
+        text-align: center;
+        /* order: 1; */
+        /* margin: auto; */
+    }
