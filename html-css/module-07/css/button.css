@@ -2,19 +2,15 @@
     display: block;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    /* padding-top: 30px; */
-    /* padding-bottom: 30px; */
 }
 
 .button {
     display: block;
     text-align: center;
     padding: 2rem 4.7rem;
-    /* padding: 20px 47px; */
     border-radius: 4px;
     background-color: var(--logo);
     font-size: 1.8rem;
-    /* font-size: 18px; */
     font-weight: 700;
     text-transform: uppercase;
     color: var(--bcg);
