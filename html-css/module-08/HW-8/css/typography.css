@@ -75,7 +75,7 @@ button {
 p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .text {
@@ -83,7 +83,7 @@ p {
 }
 
 .title-promo {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: bold;
 }
 
@@ -94,7 +94,7 @@ a,
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 .title-partner-block {

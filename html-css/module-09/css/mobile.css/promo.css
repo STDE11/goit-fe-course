@@ -63,7 +63,7 @@
    }
    
    .partners-item {
-       width: 22rem;
+       /* width: 22rem; */
        padding-bottom: 3rem;
    }
    
@@ -79,7 +79,8 @@
    
    .partner-img {
        display: block;
-       width: 58.2%;
+       /* width: 58.2%; */
+       width: 40%;
        height: auto;
        position: relative;
        margin: auto;

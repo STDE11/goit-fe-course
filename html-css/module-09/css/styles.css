@@ -3,13 +3,13 @@
 
 /* @import 'bootstrap-grid.min.css'; */
 
+@import 'typography.css';
 @import 'desktop.css/promo.css';
 @import 'tablet.css/promo.css';
+@import 'mobile.css/promo.css';
 @import 'mobile.css/base.css';
 @import 'mobile.css/button.css';
-@import 'mobile.css/promo.css';
 @import 'mobile.css/header.css';
-@import 'typography.css';
 @import 'tablet.css/header.css';
 @import 'tablet.css/button.css';
 @import 'desktop.css/button.css';

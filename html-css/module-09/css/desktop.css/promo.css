@@ -1,18 +1,18 @@
- @media (min-width: 1280px) {
-     wrapper.promo {
+ @media (min-width: 1200px) {
+     section.promo {
          background-image: url('../../image/bcg-desktop.jpg');
-         padding-bottom: 23.4rem;
+         /* padding-bottom: 23.4rem; */
      }
-     .contaner {
+     /* .contaner {
          width: 65.28%;
-     }
-     .title-promo {
+     } */
+     /* .title-promo {
          width: 54%;
-     }
-     article {
+     } */
+     /* article {
          flex-basis: 23.4%;
-     }
-     article:nth-child(-n+2) {
+     } */
+     /* article:nth-child(-n+2) {
          margin-right: 0;
-     }
+     } */
  }
