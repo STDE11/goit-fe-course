@@ -156,6 +156,11 @@ div.article {
     height: 900px;
 }
 
+img,
+.gallery-box::before {
+    cursor: url(../image/zoom-2-2.png), default;
+}
+
 
 /*---------footer----------*/
 
@@ -182,6 +187,9 @@ div.article {
 
 .button-to-top:hover {
     background-color: var(--secondary-dark-color);
+    /* transition: all 0.2s ease-out;
+    transform: scale(1.5);
+    transform-origin: 40% 40%; */
 }
 
 .bg-Homework_6_return {
@@ -189,7 +197,7 @@ div.article {
     position: absolute;
     width: 13px;
     height: 8px;
-    background: url(../image/css_sprites.png) -645px -1376px;
+    background: url(../image/css_sprites.png) -645px -1377px;
 }
 
 .footer-box {
@@ -249,6 +257,7 @@ div.article {
     margin: auto;
 }
 
+.to-top:hover,
 .footer-item:hover,
 .icon:hover {
     transition: all 0.2s ease-out;

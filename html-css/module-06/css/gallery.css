@@ -20,14 +20,9 @@
     height: 155px;
     content: ' ';
     background-color: rgba(00, 00, 00, 0);
+    cursor: url(../image/zoom-2-2.png), default;
 }
 
 .gallery-box:hover::before {
     background-color: rgba(00, 00, 00, 0.6);
-    position: absolute;
-    display: flex;
-    width: 288px;
-    height: 155px;
-    margin: auto;
-    content: url(../image/zoom.png);
 }
