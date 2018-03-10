@@ -3,7 +3,7 @@
     .button--partners {
         width: 24.04%;
     }
-    .button--partner1 {
+    /* .button--partner1 {
         background: url(../../image/css_sprites.png) var(--partner1) -49px -6px;
     }
     .button--partner2 {
@@ -14,5 +14,5 @@
     }
     .button--partner4 {
         background: url(../../image/css_sprites.png)var(--partner4)-47px -47px;
-    }
+    } */
 }

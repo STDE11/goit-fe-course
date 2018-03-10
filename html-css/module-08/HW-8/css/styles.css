@@ -1,10 +1,10 @@
-@import 'typography.css';
 @import 'mobile.css/base.css';
+@import 'typography.css';
 @import 'mobile.css/button.css';
 @import 'tablet.css/button.css';
 @import 'desktop.css/button.css';
-@import 'tablet.css/header.css';
 @import 'mobile.css/header.css';
+@import 'tablet.css/header.css';
 @import 'mobile.css/promo.css';
 @import 'tablet.css/promo.css';
 @import 'desktop.css/promo.css';

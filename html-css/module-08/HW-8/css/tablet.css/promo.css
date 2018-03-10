@@ -19,7 +19,6 @@
         padding: 2.6rem 4.8rem 3rem 4.8rem;
     }
     .block-partners {
-        /* width: 75%; */
         margin: auto;
         display: flex;
         flex-flow: row wrap;
@@ -54,5 +53,8 @@
     }
     .four {
         order: 4;
+    }
+    .block-button--partner {
+        padding-bottom: 4rem;
     }
 }
