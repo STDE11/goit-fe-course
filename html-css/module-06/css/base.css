@@ -156,11 +156,6 @@ div.article {
     height: 900px;
 }
 
-img,
-.gallery-box::before {
-    cursor: url(../image/zoom-2-2.png), default;
-}
-
 
 /*---------footer----------*/
 
