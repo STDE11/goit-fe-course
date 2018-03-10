@@ -15,4 +15,5 @@
     text-transform: uppercase;
     color: var(--bcg);
     margin: auto;
+    cursor: pointer;
 }

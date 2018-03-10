@@ -76,6 +76,8 @@ ul {
 }
 
 .menu-item:hover>a {
+    transition-property: color;
+    transition-duration: 0.5s;
     color: var(--primary-dark-color);
 }
 
@@ -245,6 +247,13 @@ div.article {
     justify-content: space-between;
     align-items: flex-end;
     margin: auto;
+}
+
+.footer-item:hover,
+.icon:hover {
+    transition: all 0.2s ease-out;
+    transform: scale(1.5);
+    transform-origin: 40% 40%;
 }
 
 .icon {

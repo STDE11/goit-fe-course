@@ -9,6 +9,7 @@
     border: 2px solid rgba(0, 0, 0, 0);
     background-color: transparent;
     position: relative;
+    cursor: pointer;
 }
 
 .button-log,
