@@ -1,11 +1,11 @@
-   wrapper.promo {
+   section.promo {
        background-image: url('../../image/bcg-mobile.jpg');
        background-repeat: no-repeat;
        background-size: cover;
        padding-bottom: 13.7rem;
    }
    
-   wrapper.partners {
+   section.partners {
        background-color: var(--bcg);
        padding-top: 6.8rem;
    }

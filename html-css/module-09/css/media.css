@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-    wrapper.promo {
+    section.promo {
         background-image: url('../image/bcg-tablet.jpg');
         padding-bottom: 23.4rem;
     }
@@ -19,7 +19,7 @@
 }
 
 @media (min-width: 1200px) {
-    wrapper.promo {
+    section.promo {
         background-image: url('../image/bcg-desktop.jpg');
     }
 }

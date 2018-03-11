@@ -28,7 +28,7 @@ html {
     font-size: 10px;
 }
 
-wrapper {
+section {
     display: block;
     height: auto;
     min-width: 320px;
