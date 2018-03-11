@@ -35,6 +35,7 @@
        color: var(--text);
    }
    
+   .logo,
    .text-partner {
        padding-left: 1rem;
        padding-right: 1rem;
