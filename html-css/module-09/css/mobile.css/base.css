@@ -119,3 +119,11 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
+
+.button:link,
+.button:visited,
+.button:active,
+.button:hover,
+.button:focus {
+    outline: 0;
+}
