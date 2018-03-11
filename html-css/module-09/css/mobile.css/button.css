@@ -50,8 +50,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 60%;
     border: 4px solid var(--bcg);
     background-repeat: no-repeat;
@@ -107,31 +107,29 @@
 }
 
 .button:active::before {
-    transition-property: background-color, border-color;
-    transition-duration: 0.5s;
+    transition: all 0.3s ease-out;
     background-color: rgba(0, 0, 0, 0.3);
-    border-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 .button:hover::after {
-    transition-property: background-color, border-color;
-    transition-duration: 0.5s;
+    transition: all 0.3s ease-out;
     background-color: rgba(255, 255, 255, 0.3);
     border-color: rgba(255, 255, 255, 0.1);
 }
 
 .button--partner1 {
-    background: url(../../image/css_sprites.png) var(--partner1) -51px -9px;
+    background: url(../../image/css_sprites.png) var(--partner1) -48px -4px;
 }
 
 .button--partner2 {
-    background: url(../../image/css_sprites.png) var(--partner2) -9px -50px;
+    background: url(../../image/css_sprites.png) var(--partner2) -5px -47px;
 }
 
 .button--partner3 {
-    background: url(../../image/css_sprites.png)var(--partner3)-10px -10px;
+    background: url(../../image/css_sprites.png) var(--partner3)-5px -5px;
 }
 
 .button--partner4 {
-    background: url(../../image/css_sprites.png)var(--partner4)-50px -50px;
+    background: url(../../image/css_sprites.png) var(--partner4)-47px -47px;
 }

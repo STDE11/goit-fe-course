@@ -20,8 +20,8 @@
     font-size: 1.2rem;
     line-height: 1.2;
     text-decoration: none;
-    /* outline: 1px solid red; */
-    /* border: 0; */
+    outline: 1px solid red;
+    border: 0;
 }
 
 html {
