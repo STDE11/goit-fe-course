@@ -47,3 +47,16 @@
     .container--promo {
         margin-bottom: 12rem;
     }
+    /* *:required {
+        outline: 3px solid green;
+    } */
+    
+    *:required:invalid {
+        outline: 3px solid red;
+        /* background: red; */
+    }
+    
+    *:required:valid {
+        outline: 3px solid green;
+        /* background: green; */
+    }
