@@ -3,6 +3,7 @@
     width: 400px;
     height: 200px;
     background: url('https://placeimg.com/400/200/tech') no-repeat;
+    /* background: url('http://www.w3.org/2000/svg') no-repeat; */
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
