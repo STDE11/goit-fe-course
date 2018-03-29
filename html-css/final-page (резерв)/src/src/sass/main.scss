@@ -1,0 +1,26 @@
+ $orange: #ff6c00;
+ $button: #d1d3d4;
+ .card__block {
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .card__img {
+     display: inline-block;
+     width: 0.2313%;
+     height: auto;
+ }
+ 
+ .button__block {
+     display: flex;
+     flex-direction: column wrap;
+ }
+ 
+ .batton__card {
+     width: 41.25%;
+     height: 3rem;
+     background-color: $button;
+     &:hover {
+         background-color: $orange;
+     }
+ }
