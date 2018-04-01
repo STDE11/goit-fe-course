@@ -146,5 +146,13 @@ table {
     border-spacing: 0;
 }
 
+button:link,
+button:visited,
+button:active,
+button:hover,
+button:focus {
+    outline: 0;
+}
+
 // © 2018 GitHub,
 // Inc. Terms Privacy Security Status Help Contact GitHub API Training Shop Blog About Press h to open a hovercard with more details.

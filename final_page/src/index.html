@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FINAL_PAGE_320-04</title>
-    <link href="https://www.fonts-online.ru/font/Roboto-Light" rel="stylesheet">
-    <link href="https://www.fonts-online.ru/font/Roboto-Medium" rel="stylesheet">
-    <link href="https://www.fonts-online.ru/font/Roboto-Regular" rel="stylesheet">
-    <link href="https://www.fonts-online.ru/font/Ubuntu-Medium" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
@@ -21,15 +17,15 @@
 
             <nav class="menu">
                 <ul class="menu__nav">
-                    <div class="menu__nav-item">
+                    <li class="menu__nav-item">
                         <img class="menu__nav-logo__img" src="img/logo.png" alt="Логотип Go-IT">
-                    </div>
-                    <div class="menu__nav-item">
+                    </li>
+                    <li class="menu__nav-item">
                         <a class="menu__nav-link" href="#">Contacts</a>
-                    </div>
-                    <div class="menu__nav-item">
+                    </li>
+                    <li class="menu__nav-item">
                         <a class="menu__nav-link" href="#">About</a>
-                    </div>
+                    </li>
                 </ul>
             </nav>
             <figure class="profile">
@@ -44,9 +40,9 @@
         <main class="content">
 
             <!--                            вертка хедера                            -->
-            <sectin class="make__up">
+            <section class="make__up">
                 <h2 class="make__up--title">Верстка хедера</h2>
-            </sectin>
+            </section>
 
             <!--                            секция карт                               -->
             <section class="cards">
@@ -78,10 +74,10 @@
             <!--                         секция кнопок                               -->
             <section class="button">
                 <div class="button__block">
-                    <button type="button" class="batton__card batton__card-flip">Flip cards</button>
-                    <button type="button" class="batton__card batton__card-reset">Reset cards</button>
-                    <button type="button" class="batton__card batton__card-previous">Previous question</button>
-                    <button type="button" class="batton__card batton__card-next">Next question</button>
+                    <button type="button" class="batton__card batton__card-flip"><i class="batton__icon batton__icon-flip"></i>Flip cards</button>
+                    <button type="button" class="batton__card batton__card-reset"><i class="batton__icon batton__icon-reset"></i>Reset cards</button>
+                    <button type="button" class="batton__card batton__card-previous"><i class="batton__icon batton__icon-previous"></i>Previous question</button>
+                    <button type="button" class="batton__card batton__card-next"><i class="batton__icon batton__icon-next"></i>Next question</button>
                 </div>
             </section>
 
@@ -104,36 +100,33 @@
 
             <!--                         результаты                               -->
             <section class="result">
-                <div class="result__block">
-                    <article class="result__item">
-                        <i class="result__icon"></i>
+                <div class="result__block result-counter">
+                    <div class="result__item">
                         <p class="result__text">Верстка хедера</p>
-                        <div class="result__block"></div>
-                    </article>
-                    <article class="result__item">
-                        <i class="result__icon"></i>
-                        <p class="result__text">Верстка футера</p>
-                        <div class="result__block"></div>
-                    </article>
-                    <article class="result__item">
-                        <i class="result__icon"></i>
+                        <div class="result__img">5</div>
+                    </div>
+                    <div class="result__item">
+                        <p class="result__text">Верстка футера </p>
+                        <div class="result__img">13</div>
+                    </div>
+                    <div class="result__item">
                         <p class="result__text">Регистрация пользователя</p>
-                        <div class="result__block"></div>
-                    </article>
-                    <article class="result__item">
-                        <i class="result__icon"></i>
+                        <div class="result__img">8</div>
+                    </div>
+                    <div class="result__item">
                         <p class="result__text">Верстка формы</p>
-                        <div class="result__block"></div>
-                    </article>
-                </div>
-                <div class="btn-add">
-                    <i class="btn-add__icon"></i>
+                        <div class="result__img">2</div>
+                    </div>
+                    <div class="add">
+                        <button type="button" class="button__add">
+                        <i class=" btn-add__icon"></i>Plus</button>
+                    </div>
                 </div>
             </section>
 
-            <section class="button">
-                <div class="button__block">
-                    <button type="button" class="batton__card">End game</button>
+            <section class="end">
+                <div class="end__block">
+                    <button class="end__batton">End game</button>
                 </div>
             </section>
         </main>
@@ -145,6 +138,22 @@
             <p>Command GoIT 2017</p>
         </footer>
 
+    </div>
+    <!-- ---------------------------------------test block----------------------------------- -->
+    <div class="test">
+        <div class="test__block">
+            <i class="icon-test"></i>
+            <img class="img__test" src="../img/sprite/add-bleck.svg" alt="">
+            <a href="#" class="a__test">
+                <svg class="a__svg__test">
+                  <use href="../img/sprite/add-bleck.svg"></use>
+               </svg>
+            </a>
+        </div>
+        <div class="test__block">
+            <button type="button" class="test__btn"> icon-test<i class="icon-test"></i></button>
+            <button type="button" class="test__btn"> icon-btn<i class="icon-btn"></i></button>
+        </div>
     </div>
 
 </body>

@@ -143,10 +143,20 @@ table {
   border-spacing: 0;
 }
 
+button:link,
+button:visited,
+button:active,
+button:hover,
+button:focus {
+  outline: 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto';
+  font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.2;
   text-decoration: none;
@@ -201,7 +211,8 @@ html {
   display: block;
   color: #ff6c00;
   font-size: 1.2rem;
-  font-family: "UbuntuMedium";
+  font-family: 'Ubuntu';
+  font-weight: 500;
   padding-left: 1.5rem;
 }
 
@@ -222,12 +233,16 @@ html {
   margin: auto;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 3.2rem;
 }
 
 .make__up--title {
   text-align: center;
-  font-family: "Roboto Medium" sans-serif;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 500;
   font-size: 2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
 }
 
 .card__block {
@@ -239,7 +254,7 @@ html {
   display: block;
   width: 22.5%;
   height: auto;
-  box-shadow: 5px 5px 5px rgba 0, 0, 0, 1;
+  box-shadow: 1px 1px 1px 1px #8c8e90;
 }
 
 .card__img {
@@ -250,8 +265,14 @@ html {
 
 figcaption {
   text-align: center;
-  font-family: "Ubuntu Medium" sans-serif;
+  font-family: 'Ubuntu' sans-serif;
+  font-weight: 400;
   font-size: 1rem;
+  padding-top: 0.2rem;
+}
+
+section.button {
+  padding-top: 3.6rem;
 }
 
 .button__block {
@@ -261,52 +282,41 @@ figcaption {
   height: 7.7rem;
   justify-content: space-between;
   align-content: space-between;
-  border-radius: 30px 0;
 }
 
 .batton__card {
   width: 46.8%;
   height: 3rem;
   background-color: #d1d3d4;
-  font-family: "Ubuntu Medium" sans-serif;
+  font-family: 'Ubuntu' sans-serif;
+  font-weight: 400;
   font-size: 1.1rem;
   color: #fff;
-}
-
-.batton__card::beefore {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.batton__card::beefore-flip {
-  content: 'img/sprite/flip.svg';
-}
-
-.batton__card::beefore-reset {
-  content: 'img/sprite/reset.svg';
-}
-
-.batton__card::beefore-previous {
-  content: 'img/sprite/orevious.svg';
-}
-
-.batton__card::beefore-next {
-  content: 'img/sprite/next.svg';
+  border-radius: 5px 0;
+  box-shadow: 1px 1px 1px 1px #8c8e90;
 }
 
 .batton__card:hover {
   background-color: #ff6c00;
 }
 
+.batton__icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.batton__icon-flip {
+  background-image: url(../img/sprite/foto.png);
+}
+
 .numbers__block {
   display: flex;
   width: 100%;
-  height: 17.6rem;
-  padding: 0.8rem;
+  height: 20.7rem;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: center;
+  align-content: center;
 }
 
 .numbers__item {
@@ -315,7 +325,8 @@ figcaption {
   border: 0.8rem solid #f1f2f2;
   border-radius: 12px;
   background-color: #fff;
-  font-family: "Roboto Medium" sans-serif;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 500;
   font-size: 2.3rem;
   text-align: center;
   line-height: 6.4rem;
@@ -324,14 +335,189 @@ figcaption {
 }
 
 .numbers__item:hover {
+  transition: all 0.5s ease-out;
   background-color: #ff6c00;
+  color: #fff;
+}
+
+.result__block {
+  width: 100%;
+  height: auto;
+}
+
+.result__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem;
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+  margin-bottom: 0.7rem;
+}
+
+.result__item::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 4rem;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  counter-increment: list-counter;
+  content: counter(list-counter);
+  color: #414042;
+}
+
+.result__item:hover {
+  transition: all 0.5s ease-out;
+  background-color: #d1d3d4;
+  color: #fff;
+}
+
+.result-counter {
+  counter-reset: list-counter;
+}
+
+.result__text {
+  font-family: 'Roboto' sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.result__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #e89f6a;
+  border-radius: 30%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  padding-top: 0.8rem;
+}
+
+.button__add {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px 1px #8c8e90;
+}
+
+.button__add:hover {
+  background-color: #ff6c00;
+  border: 3px solid #fff;
+}
+
+.btn-add__icon {
+  background: url(../img/sprite/reset.svg);
+}
+
+.end__block {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.end__batton {
+  width: 46.8%;
+  height: 3rem;
+  background-color: #ff6c00;
+  font-family: 'Ubuntu' sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #fff;
+  border-radius: 5px 0;
+  box-shadow: 1px 1px 1px 1px #8c8e90;
+}
+
+.end__batton:hover {
+  background-color: #d1d3d4;
+}
+
+.test {
+  width: 300px;
+  height: auto;
+  background-color: #f1f2f2;
+  padding: 20px;
+}
+
+.test__block {
+  width: 100%;
+  min-height: 200px;
+  background-color: grey;
+}
+
+.icon-test {
+  display: block;
+  width: 30px;
+  height: 15px;
+  background-size: 30px 30px;
+  fill: #000;
+  background: url(../img/sprite/add-bleck.svg);
+}
+
+.img__test {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url();
+  background: blue;
+  background-size: cover no-repit;
+}
+
+.a__test {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: withe;
+}
+
+.a__svg__test {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  fill: #000;
+}
+
+.icon-btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/sprite/add-bleck.svg);
+  background-size: 30px 30px;
+  fill: #000;
+}
+
+.test__btn {
+  display: flex;
+  width: 200px;
+  height: 35px;
+  background-color: #ff6c00;
+  margin: 1rem;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "RobotoRegular";
+  font-family: "Roboto";
+  font-weight: 400;
   font-size: 80%;
   height: 25px;
   background-color: #555;
