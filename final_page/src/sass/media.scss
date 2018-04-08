@@ -1,0 +1,395 @@
+// @media only screen and (min-width: 320px) {
+//     .menu__nav-link,
+//     .profile__link {
+//         display: none;
+//     }
+// }
+@media only screen and (min-width: 320px) {
+    .numbers__item--0 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    // header
+    .header {
+        padding-bottom: 3.4rem;
+    }
+    .menu__nav-logo__img {
+        width: 8.1rem;
+    }
+    .profile {
+        width: 5.558%;
+    } // main
+    .content {
+        padding-bottom: 4.8rem;
+    } // секция карт
+    .card__block {
+        display: none;
+    }
+    // .cards {
+    //     display: block;
+    //     width: 100%;
+    //     height: auto;
+    // } 
+    //  верстка хедера
+    .make__up--title {
+        font-size: 3rem;
+        padding-bottom: 21.4rem;
+    }
+    // блок карт
+    // .card__block {
+    //     display: flex;
+    // } 
+    // .card__player {
+    //     display: block;
+    //     width: 22.5%;
+    //     height: auto;
+    //     box-shadow: $box-shadow;
+    // }
+    // .card__img {
+    //     display: block;
+    //     width: 100%;
+    //     height: auto;
+    // }
+    // figcaption {
+    //     text-align: center;
+    //     font-family: 'Ubuntu' sans-serif;
+    //     font-weight: 400;
+    //     font-size: 1.6rem;
+    //     padding-top: 0.2rem;
+    // } 
+    // section button
+    section.button {
+        padding-top: 3.6rem;
+    } // section button
+    .button__block {
+        height: 11.1rem;
+    }
+    .button__card {
+        height: 4.6rem;
+        font-size: 1.7rem;
+        &-previous {
+            order: 2;
+        }
+        &-next {
+            order: 1;
+        }
+    }
+    .button__icon {
+        margin-right: 1.2rem;
+        width: 1.7rem;
+        height: 1.7rem;
+    } // карточки с номерами 
+    .numbers__block {
+        margin-top: 4.8rem;
+        margin-bottom: 4.8rem;
+        height: 22.4rem;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .numbers__item {
+        width: 6.4rem;
+        height: 10.4rem;
+        border: 0;
+        margin-right: 2.8rem;
+        border-radius: 4px;
+        font-size: 3.7rem;
+        line-height: 10.4rem;
+        &:nth-child(5n) {
+            margin-right: 0;
+        }
+    } // результаты 
+    .result__item {
+        padding-right: 2.4rem;
+        height: 5.8rem;
+        margin-bottom: 1.6rem;
+        &::before {
+            width: 5rem;
+            height: 5.8rem;
+            font-size: 2.1rem;
+        }
+    }
+    .result__text {
+        font-size: 1.5rem;
+    }
+    .result__img {
+        width: 4.1rem;
+        height: 4.1rem;
+        font-size: 2rem;
+    }
+    .add {
+        display: flex;
+        justify-content: center;
+        padding-top: 2.4rem;
+        padding-bottom: 3.2rem;
+    }
+    .button__add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 3.2rem;
+        height: 3.2rem;
+        background-color: $white;
+        box-shadow: $box-shadow;
+        &--icon {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    } // section end__button
+    .end__button {
+        height: 4.8rem;
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    // header
+    .header {
+        padding-top: 2.4rem;
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+        padding-bottom: 4rem;
+        position: relative;
+        align-items: flex-start;
+    }
+    .menu {
+        width: 36rem;
+    }
+    .menu__nav {
+        justify-content: space-between;
+        &-logo__img {
+            width: 13.2rem;
+            height: auto;
+        }
+        &-link {
+            display: flex;
+        }
+    }
+    .profile {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 5.4rem;
+        height: 4.6rem;
+        position: absolute;
+        top: 1.5rem;
+        right: 3.2rem;
+        &__img {
+            width: 2.6rem;
+            height: 2.6rem;
+        }
+        &__link {
+            display: block;
+        }
+    } // main
+    .content {
+        display: flex;
+        flex-flow: row wrap;
+        padding-left: 3.2rem;
+        padding-right: 3.2rem;
+        padding-bottom: 5.6rem;
+    } // секция карт
+    .cards {
+        display: flex;
+        flex-flow: column;
+        width: 59.09%;
+        padding: 0 1.6rem 0 1.6rem;
+        height: auto;
+        order: -1;
+    } //  верстка хедера
+    .make__up--title {
+        text-align: left;
+        font-family: 'Ubuntu' sans-serif;
+        font-weight: 700;
+        font-size: 1.6rem;
+        color: $orange;
+        padding-bottom: 5.2rem;
+    } // блок карт
+    .card__block {
+        display: flex;
+        width: 100%
+    }
+    .card__player {
+        width: 23.0769%;
+    } // section button
+    section.button {
+        width: 70.4rem;
+        padding-top: 4.6rem;
+    }
+    .button__block {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        padding: 0 1.6rem 0 1.6rem;
+    }
+    .button__card {
+        width: 15.8rem;
+        height: 3.8rem;
+        font-size: 1.3rem;
+        &-previous {
+            order: 0;
+        }
+        &-next {
+            order: 0;
+        }
+    }
+    .button__icon {
+        margin-right: 1rem;
+        width: 1.3rem;
+        height: 1.3rem;
+    } // карточки с номерами 
+    section.numbers {
+        width: 70.4rem;
+    }
+    .numbers__block {
+        height: auto;
+        margin-top: 10.6rem;
+        margin-bottom: 7.4rem;
+        padding: 0 0.8rem 0 1.6rem;
+        justify-content: space-between;
+    }
+    .numbers__item--0 {
+        display: flex;
+        justify-content: center;
+    }
+    .numbers__item {
+        width: 4rem;
+        height: 6.4rem;
+        border: 0;
+        background-color: $button;
+        margin-right: 0;
+        font-size: 2.3rem;
+        line-height: 6.4rem;
+        color: $white;
+        &:hover {
+            transition: all 0.5s ease-out;
+            transform-origin: 50% 1%;
+        }
+    } // результаты 
+    section.result {
+        display: flex;
+        width: 40.9091%;
+        padding: 0 1.6rem 0 1.6rem;
+        order: -2;
+        box-shadow: $box-shadow;
+    }
+    .result__block {
+        height: 25rem;
+        padding: 0.8rem;
+        background-color: $white; // overflow-y: scroll;
+    }
+    .result__items {
+        // overflow-y: auto;
+        overflow-y: scroll;
+    }
+    .result__item {
+        background-color: $light-grey;
+        padding-right: 0.8rem;
+        height: 4rem;
+        margin-bottom: 0.7rem;
+        &::before {
+            width: 3.2rem;
+            height: 4rem;
+            font-size: 1.4rem;
+        }
+    }
+    .result__text {
+        font-size: 1rem;
+    }
+    .result__img {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.3rem;
+    }
+    .add {
+        display: flex;
+        justify-content: center;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+    .button__add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $white;
+        box-shadow: $box-shadow;
+        &--icon {
+            width: 0.9rem;
+            height: 0.9rem;
+        }
+    } // section end__button
+    section.end {
+        display: flex;
+        width: 70.4rem;
+    }
+    .end__button {
+        width: 15.8rem;
+        height: 3.8rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    // header
+    .header {
+        padding-top: 2.4rem;
+        padding-left: 4.8rem;
+        padding-right: 4.8rem;
+        position: relative;
+        align-items: flex-start;
+    }
+    .profile {
+        display: flex; // display: block;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 5.4rem;
+        height: 5rem;
+        position: absolute;
+        top: 1.5rem;
+        right: 4.8rem; // padding-bottom: 0.9rem;
+        &__img {
+            // display: block;
+            width: 3.3rem;
+            height: 3.3rem;
+        }
+        &__link {
+            display: block;
+            width: 100%;
+            font-family: 'Ubuntu' sans-serif;
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: $orange;
+            text-decoration: none;
+        }
+    } // main
+    // card-block
+    .card__block {
+        display: flex;
+    }
+    .cards {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    // header
+    .profile {
+        right: 6.4rem; // padding-bottom: 0.9rem;
+    } // main
+}
+
+@media only screen and (min-width: 1440px) {
+    // header
+    // main
+}
