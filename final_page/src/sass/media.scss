@@ -234,7 +234,8 @@
         &:hover {
             transform: translateY(-50%);
         }
-    } // результаты 
+    }
+    // результаты 
     section.result {
         display: flex;
         margin-right: 1.6rem;
@@ -289,7 +290,8 @@
             width: 0.9rem;
             height: 0.9rem;
         }
-    } // section end__button
+    }
+    // section end__button
     section.end {
         display: flex;
         width: 68.8rem;
@@ -318,20 +320,24 @@
             width: 3.4rem;
             height: 3.4rem;
         }
-    } // main
+    }
+    // main
     .content {
         justify-content: center;
         padding-left: 10.4rem;
         padding-right: 9.8rem;
-    } // секция карт
+    }
+    // секция карт
     .cards {
         padding: 0 0.6rem 0 1.6rem;
-    } //  верстка хедера
+    }
+    //  верстка хедера
     .make__up--title {
         padding-bottom: 5.8rem;
-    } // блок карт
+    }
+    // блок карт
     .card__block {
-        //         display: flex;
+        // display: flex;
         width: 46.4rem;
     }
     .card__player {
