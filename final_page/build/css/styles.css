@@ -256,7 +256,6 @@ button:focus {
   font-size: 1.2rem;
   line-height: 1.2;
   text-decoration: none;
-  outline: 1px solid red;
   border: 0;
 }
 
@@ -277,6 +276,17 @@ html {
 .button:hover,
 .button:focus {
   outline: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Ubuntu' sans-serif;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 1px 1px 1px 1px #8c8e90, -2px -2px 2px #fff;
+  cursor: pointer;
 }
 
 .header {
@@ -392,19 +402,11 @@ section.button {
 }
 
 .button__card {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   width: 46.8%;
   height: 3rem;
   background-color: #d1d3d4;
-  font-family: 'Ubuntu' sans-serif;
-  font-weight: 500;
   font-size: 1.1rem;
-  color: #fff;
   border-radius: 6px 3px;
-  box-shadow: 1px 1px 1px 1px #8c8e90, -2px -2px 2px #fff;
-  cursor: pointer;
 }
 
 .button__card:hover {
@@ -412,7 +414,7 @@ section.button {
 }
 
 .st1 {
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .button__icon {
@@ -523,15 +525,10 @@ section.button {
 }
 
 .button__add {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
   background-color: #fff;
-  box-shadow: 1px 1px 1px 1px #8c8e90, -2px -2px 2px #fff;
-  cursor: pointer;
 }
 
 .button__add--icon {
@@ -554,13 +551,8 @@ section.button {
   width: 46.8%;
   height: 3rem;
   background-color: #ff6c00;
-  font-family: 'Ubuntu' sans-serif;
-  font-weight: 500;
   font-size: 1.1rem;
-  color: #fff;
   border-radius: 7px 5px;
-  box-shadow: 1px 1px 1px 1px #8c8e90, -2px -2px 2px #fff;
-  cursor: pointer;
 }
 
 .end__button:hover {
@@ -573,7 +565,7 @@ section.button {
   align-items: center;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 80%;
+  font-size: 110%;
   height: 25px;
   background-color: #555;
   color: #fff;
@@ -770,7 +762,7 @@ section.button {
   .content {
     display: flex;
     flex-flow: row wrap;
-    padding-left: 3.2rem;
+    padding-left: 4.8rem;
     padding-right: 3.2rem;
     padding-bottom: 5.6rem;
   }
@@ -778,7 +770,6 @@ section.button {
   .cards {
     display: flex;
     flex-flow: column;
-    width: 59.09%;
     padding: 0 1.6rem 0 1.6rem;
     height: auto;
     order: -1;
@@ -795,7 +786,7 @@ section.button {
 
   .card__block {
     display: flex;
-    width: 100%;
+    width: 38.4rem;
   }
 
   .card__player {
@@ -803,7 +794,7 @@ section.button {
   }
 
   section.button {
-    width: 70.4rem;
+    width: 68.8rem;
     padding-top: 4.6rem;
   }
 
@@ -813,7 +804,7 @@ section.button {
     width: 100%;
     height: auto;
     justify-content: space-between;
-    padding: 0 1.6rem 0 1.6rem;
+    padding: 0 1.6rem 0 0;
   }
 
   .button__card {
@@ -837,14 +828,14 @@ section.button {
   }
 
   section.numbers {
-    width: 70.4rem;
+    width: 68.8rem;
   }
 
   .numbers__block {
     height: auto;
     margin-top: 10.6rem;
     margin-bottom: 7.4rem;
-    padding: 0 0.8rem 0 1.6rem;
+    padding: 0 0.8rem 0 0;
     justify-content: space-between;
   }
 
@@ -862,29 +853,30 @@ section.button {
     font-size: 2.3rem;
     line-height: 6.4rem;
     color: #fff;
+    transition: all 0.5s ease-out;
   }
 
   .numbers__item:hover {
-    transition: all 0.5s ease-out;
-    -webkit-transform-origin: 50% 1%;
-    transform-origin: 50% 1%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
   }
 
   section.result {
     display: flex;
-    width: 40.9091%;
-    padding: 0 1.6rem 0 1.6rem;
+    margin-right: 1.6rem;
     order: -2;
     box-shadow: 1px 1px 1px 1px #8c8e90, -2px -2px 2px #fff;
   }
 
   .result__block {
-    height: 25rem;
+    width: 25.6rem;
+    height: 24.8rem;
     padding: 0.8rem;
     background-color: #fff;
   }
 
   .result__items {
+    height: 18.8rem;
     overflow-y: scroll;
   }
 
@@ -892,7 +884,7 @@ section.button {
     background-color: #f1f2f2;
     padding-right: 0.8rem;
     height: 4rem;
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.8rem;
   }
 
   .result__item::before {
@@ -914,8 +906,8 @@ section.button {
   .add {
     display: flex;
     justify-content: center;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0.7rem;
   }
 
   .button__add {
@@ -923,8 +915,8 @@ section.button {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.6rem;
+    height: 2.6rem;
     background-color: #fff;
     box-shadow: 1px 1px 1px 1px #8c8e90, -2px -2px 2px #fff;
   }
@@ -936,7 +928,8 @@ section.button {
 
   section.end {
     display: flex;
-    width: 70.4rem;
+    width: 68.8rem;
+    padding: 0 1.6rem 0 0;
   }
 
   .end__button {
@@ -956,45 +949,123 @@ section.button {
   }
 
   .profile {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 5.4rem;
     height: 5rem;
-    position: absolute;
-    top: 1.5rem;
     right: 4.8rem;
   }
 
   .profile__img {
-    width: 3.3rem;
-    height: 3.3rem;
+    width: 3.4rem;
+    height: 3.4rem;
   }
 
-  .profile__link {
-    display: block;
-    width: 100%;
-    font-family: 'Ubuntu' sans-serif;
-    font-weight: 500;
-    font-size: 1.1rem;
-    color: #ff6c00;
-    text-decoration: none;
-  }
-
-  .card__block {
-    display: flex;
+  .content {
+    justify-content: center;
+    padding-left: 10.4rem;
+    padding-right: 9.8rem;
   }
 
   .cards {
-    display: block;
-    width: 100%;
-    height: auto;
+    padding: 0 0.6rem 0 1.6rem;
+  }
+
+  .make__up--title {
+    padding-bottom: 5.8rem;
+  }
+
+  .card__block {
+    width: 46.4rem;
+  }
+
+  .card__player {
+    width: 9.6rem;
+  }
+
+  section.button {
+    width: 76rem;
+  }
+
+  .button__block {
+    padding: 0;
+  }
+
+  .button__card {
+    height: 4rem;
+  }
+
+  section.numbers {
+    width: 68rem;
+  }
+
+  .numbers__block {
+    padding: 0;
+  }
+
+  section.result {
+    margin-right: 1.6rem;
+  }
+
+  .result__block {
+    padding: 0.8rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  .header {
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+  }
+
   .profile {
     right: 6.4rem;
+  }
+
+  .content {
+    justify-content: flex-end;
+    padding-left: 6.4rem;
+    padding-right: 10.4rem;
+  }
+
+  .cards {
+    width: 68.6rem;
+    padding: 0;
+  }
+
+  .make__up--title {
+    padding-left: 0.8rem;
+  }
+
+  .card__block {
+    align-self: center;
+    width: 44.8rem;
+  }
+
+  section.button {
+    width: 68.6rem;
+  }
+
+  .numbers__block {
+    align-self: flex-end;
+    padding: 0;
+  }
+
+  section.result {
+    margin-right: 2.4rem;
+  }
+
+  .result__block {
+    width: 32rem;
+    padding: 0.8rem;
+  }
+
+  section.end {
+    width: 68rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .content {
+    justify-content: flex-end;
+    padding-left: 20rem;
+    padding-right: 20.8rem;
   }
 }

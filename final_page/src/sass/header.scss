@@ -1,4 +1,3 @@
-// $orange: #ff6c00;
 .header {
     display: flex;
     justify-content: space-between;
@@ -8,21 +7,11 @@
     padding-bottom: 2.7rem;
 }
 
-// .menu {
-//     display: flex;
-//     width: 5.4rem;
-//     height: auto;
-//     align-items: center;
-// }
 .menu__nav {
     display: flex;
     width: auto;
     height: auto;
-    align-items: center; // &-item {
-    //     display: flex;
-    //     width: 100%;
-    //     height: auto;
-    // }
+    align-items: center;
     &-logo__img {
         display: flex;
         width: 5.4rem;
