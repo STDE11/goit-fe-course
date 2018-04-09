@@ -282,7 +282,7 @@ html {
   display: flex;
   justify-content: center;
   align-content: center;
-  font-family: 'Ubuntu' sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-weight: 500;
   color: #fff;
   box-shadow: 1px 1px 1px 1px #8c8e90, -2px -2px 2px #fff;
@@ -315,7 +315,7 @@ html {
 .menu__nav-link {
   display: none;
   width: auto;
-  font-family: 'Ubuntu' sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-weight: 500;
   font-size: 2.4rem;
   color: #ff6c00;
@@ -338,7 +338,7 @@ html {
 .profile__link {
   display: none;
   width: 100%;
-  font-family: 'Ubuntu' sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
   color: #ff6c00;
@@ -356,7 +356,7 @@ html {
 
 .make__up--title {
   text-align: center;
-  font-family: 'Roboto' sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 2rem;
   padding-bottom: 2.7rem;
@@ -382,8 +382,8 @@ html {
 
 figcaption {
   text-align: center;
-  font-family: 'Ubuntu' sans-serif;
-  font-weight: 400;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
   font-size: 1rem;
   padding-top: 0.2rem;
 }
@@ -438,7 +438,7 @@ section.button {
   border: 0.8rem solid #f1f2f2;
   border-radius: 12px;
   background-color: #fff;
-  font-family: 'Roboto' sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 2.3rem;
   text-align: center;
@@ -478,7 +478,7 @@ section.button {
   align-items: center;
   width: 3.2rem;
   height: 4rem;
-  font-family: 'Roboto' sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
   counter-increment: list-counter;
@@ -496,7 +496,7 @@ section.button {
 }
 
 .result__text {
-  font-family: 'Roboto' sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 300;
   font-size: 1rem;
 }
@@ -512,7 +512,7 @@ section.button {
   border-radius: 30%;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto' sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
 }
@@ -563,7 +563,7 @@ section.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto";
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 110%;
   height: 25px;
@@ -777,8 +777,8 @@ section.button {
 
   .make__up--title {
     text-align: left;
-    font-family: 'Ubuntu' sans-serif;
-    font-weight: 700;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
     font-size: 1.6rem;
     color: #ff6c00;
     padding-bottom: 5.2rem;
@@ -853,12 +853,12 @@ section.button {
     font-size: 2.3rem;
     line-height: 6.4rem;
     color: #fff;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
   }
 
   .numbers__item:hover {
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 
   section.result {

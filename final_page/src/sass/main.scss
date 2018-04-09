@@ -9,7 +9,7 @@
 //  верстка хедера
 .make__up--title {
     text-align: center;
-    font-family: 'Roboto' sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 2rem;
     padding-bottom: 2.7rem;
@@ -36,8 +36,8 @@
 
 figcaption {
     text-align: center;
-    font-family: 'Ubuntu' sans-serif;
-    font-weight: 400;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
     font-size: 1rem;
     padding-top: 0.2rem;
 }
@@ -93,7 +93,7 @@ section.button {
     border: 0.8rem solid $light-grey;
     border-radius: 12px;
     background-color: $white;
-    font-family: 'Roboto' sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 2.3rem;
     text-align: center;
@@ -131,7 +131,7 @@ section.button {
         align-items: center;
         width: 3.2rem;
         height: 4rem;
-        font-family: 'Roboto' sans-serif;
+        font-family: Roboto, sans-serif;
         font-weight: 300;
         font-size: 1.4rem;
         counter-increment: list-counter;
@@ -149,7 +149,7 @@ section.button {
 }
 
 .result__text {
-    font-family: 'Roboto' sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 300;
     font-size: 1rem;
 }
@@ -165,7 +165,7 @@ section.button {
     border-radius: 30%;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto' sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 1.3rem;
 }
