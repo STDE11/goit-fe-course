@@ -3,25 +3,40 @@
 //HW
 
 
-const ADMIN_LOGIN = 'admin';
-const ADMIN_PASSWORD = 'm4ngo1zh4ackz0r';
+const ADMIN_LOGIN = 'a';//admin
+const ADMIN_PASSWORD = '4';//m4ngo1zh4ackz0r
 
-let login = prompt('Введите логин:');
+let login = prompt('1 Введите логин:');
 let password;
+let message;
 
-if (login === null) {
-    message = 'Отменено пользователем!';
+/*if (login === null) {
+    message = '2 Отменено пользователем!';
 } else if (login !== ADMIN_LOGIN) {
-    message = 'Доступ запрещен!';
+    message = '3 Доступ запрещен!';
 } else {
-    password = prompt('Введите пароль:');
+    password = prompt('4 Введите пароль:');
 }
 
 if (password === null) {
-    message = 'Отменено пользователем!';
+    message = '5 Отменено пользователем!';
 } else if (password === ADMIN_PASSWORD) {
-    message = 'Добро пожаловать!';
+    message = '6 Добро пожаловать!';
 } else {
-    message = 'Доступ запрещен!';
+    message = '7 Доступ запрещен!';
+}
+alert(message);*/
+
+if (login === null) {
+    message = '2 Отменено пользователем!';
+} else if (login !== ADMIN_LOGIN) {
+   // password = prompt('4 Введите пароль:')
+    message = '3 Доступ запрещен!';
+} else if ((password = prompt('4 Введите пароль:')) === null) {
+    message = '5 Отменено пользователем!';
+} else if (password === ADMIN_PASSWORD) {
+    message = '6 Добро пожаловать!';
+} else {
+    message = '7 Доступ запрещен!';
 }
 alert(message);
