@@ -3,8 +3,8 @@
 //HW
 
 
-const ADMIN_LOGIN = 'a';//admin
-const ADMIN_PASSWORD = '4';//m4ngo1zh4ackz0r
+const ADMIN_LOGIN = 'admin';//
+const ADMIN_PASSWORD = 'm4ngo1zh4ackz0r';//
 
 let login = prompt('1 Введите логин:');
 let password;
