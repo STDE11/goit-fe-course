@@ -97,13 +97,13 @@ for (let i = 0; i < arr.length; i += 1) {
   PS: используйте цикл do...while
 */
 let input = 0;
-let user;
-do {
-    user = prompt('Введите число больше 100', '');
-    input = Number(user);
+let userInput;
 
-    if (user === null) {
-        break;
+do {
+  userInput = prompt('Введите число больше 100', '');
+  input = Number(userInput );
+  if (userInput === null) {
+    break;
     }
     if (input === NaN) {
         break;
