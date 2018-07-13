@@ -68,7 +68,7 @@ function Cashier(name, productsDatabase) {
   };
 
   this.onSuccess = function () {
-    const success = this.changeAmount === 0 ? 'Спасибо за покупку' : `Спасибо за покупку, ваша сдача                 ${this.changeAmount}`;
+    const success = this.changeAmount === 0 ? 'Спасибо за покупку' : `Спасибо за покупку, ваша сдача ${this.changeAmount}`;
     console.log(success);
   };
 
