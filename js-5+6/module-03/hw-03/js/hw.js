@@ -65,7 +65,6 @@ const checkIfLoginExists = () => {
 };
 
 const addLogin = () => {
-
   return (checkLoginValidity(login) === false)
     ? 'Ошибка! Логин должен быть от 4 до 16 символов'
     : (checkIfLoginExists(logins, login) === false)
