@@ -260,11 +260,12 @@ class Car {
     drive(hours) {
         // Добавляет в поле distance киллометраж (hours умноженное на значение поля speed),
         // но только в том случае если машина заведена!
-        // this.running 
-        // ? this.distance = hours * this.maxSpeed;    
-        if (this.running)
-            this.distance = hours * this.maxSpeed;
-        
+        this.running
+            ? this.distance = hours * this.maxSpeed : 0;
+        // if (this.running)
+        //     this.distance = hours * this.maxSpeed;
+        //return this.distance;
+        //this.distance = running ? hours * this.speed : continue;
     }
 
     static getSpecs(car) {
@@ -276,7 +277,6 @@ class Car {
 const someCar = new Car(100);
 someCar.turnOn();
 someCar.drive(2);
-//console.log('drive:', someCar.drive()) 
 Car.getSpecs(someCar); // maxSpeed: 100, running: true, distance: 200
 
 //======================================================
