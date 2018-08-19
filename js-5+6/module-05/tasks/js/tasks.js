@@ -74,7 +74,7 @@ console.log( summAllNumbers(1, 2, 3, 4, 5) ); // 15
   Иначе если есть хоть один элемент меньше числа, то возвращается false.
 */
 function  findEvery(num, arr) {
-    return arr.every(arr => arr >= num);
+    return arr.every(el => el >= num);
   // for (let i = 0, max = arr.length; i < max; i += 1) {
   //   if (arr[i] < num) {
   //     return false;
