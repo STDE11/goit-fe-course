@@ -107,7 +107,7 @@ console.log(totalWidth); // '125px'
 let dataYear = prompt('Какой сейчас год?:');
 let massege;
 if (dataYear === '2018') { massege = 'Все верно!' }
-else { massege = 'Но ведь на вдоре 2018!' };
+else { massege = 'Но ведь на дворе 2018!' };
 alert(massege);
 
 
