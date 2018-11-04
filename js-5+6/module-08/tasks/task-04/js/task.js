@@ -13,24 +13,30 @@
 */
 
 const form = document.querySelector(".question-form");
-//const inptChecked = form.querySelector(":checked");
-const inptChecked = form.querySelector("input");
-console.log('value:', inptChecked.value);
-const result = document.querySelector(".result");
-//const value = document.querySelector('.js-value');
 
-    
+
+
+
+form.addEventListener("submit", formSubmit);
 
 function formSubmit(event) {
   event.preventDefault();
-  const textResult = result + '' + inptChecked.value;
-  //const addValue = Number(value.textContent) + 1;
-  return result.textContent = textResult;
-  //return value;
+  
+  //console.log('value:', inptChecked.value);
+  const inptChecked = form.querySelector(":checked");
+  let textResult =  inptChecked.value;
+
+  let p = document.querySelector('.result');
+  let result = p.textContent;
+
+    //console.log('result:', result);
+  
+  return p.textContent = `${result} ${textResult}`;
+  
   
 }; 
 
-form.addEventListener("click", formSubmit);
+
 
 
 
