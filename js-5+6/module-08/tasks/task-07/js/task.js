@@ -13,21 +13,11 @@
 */
 
 
-//const input = document.querySelector('input');
-  //console.log(input.type);
-//const data = input.data - length
-  //console.log(data);//NaN
-  //console.log(input.dataset.length);//NaN
-//const type = input.data - length;
-  //console.log(typeof type);//NaN
-  //console.log(input.placeholder);
+
 const inputs = document.querySelector('.inputs');
 
 inputs.addEventListener('blur', lossOfFocus, true);
-//inputs.addEventListener('click', lossOfFocus);
-//inputs.addEventListener('blur', handleClick);
 
-//function handleClick() {
 function lossOfFocus() {
   const target = event.target;
   const targetLength = +target.dataset.length;
