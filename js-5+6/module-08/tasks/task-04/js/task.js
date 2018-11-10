@@ -13,7 +13,10 @@
 */
 
 const form = document.querySelector(".question-form");
+const p = document.querySelector('.result');
+const result = p.textContent;
 
+//let result = p.textContent;
 
 
 
@@ -26,8 +29,8 @@ function formSubmit(event) {
   const inptChecked = form.querySelector(":checked");
   let textResult =  inptChecked.value;
 
-  let p = document.querySelector('.result');
-  let result = p.textContent;
+  //let p = document.querySelector('.result');
+  //let result = p.textContent;
 
     //console.log('result:', result);
   
