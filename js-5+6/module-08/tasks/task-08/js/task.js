@@ -17,23 +17,21 @@ const p = document.querySelector('.input-value');
 //const inputCurentText = '';
 const pTitle = p.textContent;
 
+input.addEventListener('focus', focusInput, true);
+input.addEventListener('input', inputCurentValue, true);
 
 function focusInput() { 
   console.log("Input is in focus!");
 } 
 
 function inputCurentValue() {
-  //event.preventDefault();
- const inputCurentText = input.value; 
- //inputCurentText = input.value; 
-    console.log('inputCurentText:', inputCurentText); 
- //const pTitle = p.textContent;
-  //pTitle + inputcurentValue;
+  
+  const inputCurentText = input.value; 
+ 
+  console.log('inputCurentText:', inputCurentText); 
+ 
   p.textContent = pTitle + inputCurentText;
 
-      //console.log(pTitle);
   return;    
 }
 
-input.addEventListener('focus', focusInput, true);
-input.addEventListener('keyup', inputCurentValue, true);
