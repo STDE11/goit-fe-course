@@ -18,3 +18,32 @@
   При клике по ссылкам не должна перезагружаться страница!
 */
 
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('.js-menu');
+  const links = menu.querySelectorAll('.menu-link');
+  
+  menu.addEventListener('click', handMenuItemClick);
+  
+  function handMenuItemClick({target}) {
+    const nodeName = target.nodeName;
+    event.preventDefault();
+    
+    if(nodeName !== 'A') return;
+    setActiveLink(links, target)
+    
+    }
+
+  function setActiveLink(links, target) {
+    links.forEach(link => {
+      if(link !== target) {
+        link.classList.remove('menu-link-active');
+      } else {
+        link.classList.add('menu-link-active');
+      }
+    })
+  }
+
+});
+    
