@@ -4,6 +4,7 @@
 const gallery = document.querySelector('.js-image-gallery');
 const fullview = document.querySelector('.fullview');
 const preview = document.querySelector('.preview');
+//const images = preview.querySelectorAll('img');
 
 let item;
 let image;
@@ -45,21 +46,26 @@ function handGalleryItemClick({target}) {
     event.preventDefault();
     if (nodeName !== 'IMG') return;
     insertFullviewImage(preview, target)
-    console.log(target);
-    console.log(target.nodeName);
+    //changeStyleLi()
+    //console.log('target:', target);
+    //console.log('target.nodeName:',target.nodeName);
 }
 
 
 function insertFullviewImage(preview, target) {
     const previewItems = preview.querySelectorAll('img'); 
-    console.log(previewItems);
+    //console.log('previewItems:', previewItems);
     previewItems.forEach(previewItem => {
         if(previewItem !== target) {
+            previewItem.parentNode.classList.remove('active');
             return;
         } else {
             insertFullview.setAttribute('src', target.dataset.fullview);
             insertFullview.setAttribute('alt', target.alt); 
             fullview.append(insertFullview);
+            previewItem.parentNode.classList.add('active');
+            console.log('previewItem.parent:', previewItem.parentNode.classList)
+
         }    
     })
 }

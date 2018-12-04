@@ -53,6 +53,10 @@ li {
     border: solid 4px #fff;
 }
 
+.active {
+    border: solid 4px #00f;
+}
+
 
 /* img {
     min-width: 320px;
