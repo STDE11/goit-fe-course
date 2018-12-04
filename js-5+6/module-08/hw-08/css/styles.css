@@ -54,11 +54,5 @@ li {
 }
 
 .active {
-    border: solid 4px #00f;
+    border: solid 4px rgb(119, 209, 194);
 }
-
-
-/* img {
-    min-width: 320px;
-    height: auto;
-} */
