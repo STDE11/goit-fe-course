@@ -62,7 +62,7 @@ function insertFullviewImage(preview, target) {
             insertFullview.setAttribute('alt', target.alt); 
             fullview.append(insertFullview);
             previewItem.parentNode.classList.add('active');
-            console.log('previewItem.parent:', previewItem.parentNode.classList)
+            
 
         }    
     })
