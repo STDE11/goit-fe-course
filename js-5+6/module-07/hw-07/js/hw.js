@@ -17,52 +17,55 @@
 
 
 
-//--------------------------------------------
 
-function createPostCard(posts) {
-  const body = document.body;
-  //console.log(body); 
 
-  const container = document.createElement('div');
-  container.classList.add('container');
 
-  posts.forEach(function (post) {
-    const card = document.createElement('div');
-    card.classList.add('post');
+function createPostCard(elem) {
+      
+  const card = document.createElement('div');
+   card.classList.add('post');
 
-    const image = document.createElement('img');
+  const image = document.createElement('img');
     image.classList.add('post__image');
-    image.setAttribute('src', post.img);
-    image.setAttribute('alt', 'post image');
-    //console.log(image);
+    image.setAttribute('src', elem.img);
+    image.setAttribute('alt', elem.img);
+ 
 
-    const title = document.createElement('h2');
+  const title = document.createElement('h2');
     title.classList.add('post__title');
-    title.textContent = post.title;
-    //console.log(title);
+    title.textContent = elem.title;
+   
 
-    const text = document.createElement('p');
+  const text = document.createElement('p');
     text.classList.add('post__text');
-    text.textContent = post.text;
-    //console.log(text);
+    text.textContent = elem.text;
+    
 
-    const button = document.createElement('a');
+  const button = document.createElement('a');
     button.classList.add('button');
-    button.href = post.link;
+    button.href = elem.link;
     button.textContent = "Read more";
-    // console.log(button);
+    
+  card.appendChild(image);
+  card.appendChild(title);
+  card.appendChild(text);
+  card.appendChild(button);
+  return card;
+}
 
-    card.appendChild(image);
-    card.appendChild(title);
-    card.appendChild(text);
-    card.appendChild(button);
-    container.appendChild(card);
-    return container;
-  });
+function createCards(elems) {
+  const body = document.body;
+  const container = document.createElement('div');
+  
+  elems.forEach(elem => {
+    
+    container.appendChild(createPostCard(elem));
+    
+  })
+
   body.appendChild(container);
   return body;
 }
-
 
 
 //====================================
@@ -81,11 +84,11 @@ const posts = [
     link: 'link-2.com'
   },
   {
-    img: "https://placeimg.com/400/150/arch",
+    img: "https://placeimg.com/400/150/art",
     title: "Post title 3",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nemo dignissimos ea temporibus voluptatem maiores maxime consequatur impedit nobis sunt similique voluptas accusamus consequuntur, qui modi nesciunt veritatis distinctio rem!",
     link: 'link-3.com'
   }
 ];
-const cardNew = createPostCard(posts);
-console.log(cardNew);
+const cardNew = createCards(posts);
+

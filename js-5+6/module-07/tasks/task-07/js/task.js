@@ -19,18 +19,29 @@
       на 10px
 */
 function createBoxes(num) {
-  const body = document.body;
+  // const body = document.body;
+  //console.log('body:', body);
+
   const root = document.getElementById('root');
-  
+  //console.log('root:', root);
+
   const box = document.createElement('div');
   box.setAttribute('class', 'box')
-  
+  //console.log('box:', box);
+
+  // const getRandomRgb = function() {
+  //   const r = Math.round(Math.random()*256);
+  //   const g = Math.round(Math.random()*256);
+  //   const b = Math.round(Math.random()*256);
+  //   return rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+  // }
 
   function getRandomRgb() {
+    
     const r = Math.round(Math.random() * 256);
     const g = Math.round(Math.random() * 256);
     const b = Math.round(Math.random() * 256);
-    return rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+    return 'rgb(' + r + ',' + g + ',' + b + ')';
 
   }
 

@@ -41,7 +41,8 @@ class Hamburger {
    */
   addTopping(topping) {
     return this._toppings.includes(topping)
-      ? this._toppings : this._toppings.push(topping);
+      ? this._toppings 
+      : this._toppings.push(topping);
   }
 
   /**
@@ -52,7 +53,8 @@ class Hamburger {
 
     //проверить была ли добавлена эта добавка и если да то удалить ее
     return this._toppings.includes(topping)
-      ? this._toppings.splice(this._toppings.indexOf(topping), 1) : this._toppings;
+      ? this._toppings.splice(this._toppings.indexOf(topping), 1) 
+      : this._toppings;
 
   }
 
@@ -103,8 +105,10 @@ class Hamburger {
     const arrOrder = [this._size, this._stuffing];
     let sumPrice = arrOrder.reduce((acc, obj) => acc + obj.price, 0);
 
-    const arrOrderToppings = this._toppings;
-    let sumPriceToppings = arrOrderToppings.reduce((acc, obj) => acc + obj.price, 0);
+    // const arrOrderToppings = this._toppings;
+    // let sumPriceToppings = arrOrderToppings.reduce((acc, obj) => acc + obj.price, 0);
+    
+    let sumPriceToppings = this._toppings.reduce((acc, obj) => acc + obj.price, 0);
 
     return sumPrice + sumPriceToppings;
 
@@ -122,8 +126,10 @@ class Hamburger {
     const arrOrder = [this._size, this._stuffing];
     let sumCalories = arrOrder.reduce((acc, obj) => acc + obj.calories, 0);
 
-    const arrOrderToppings = this._toppings;
-    let sumCaloriesToppings = arrOrderToppings.reduce((acc, obj) => acc + obj.calories, 0);
+    // const arrOrderToppings = this._toppings;
+    // let sumCaloriesToppings = arrOrderToppings.reduce((acc, obj) => acc + obj.calories, 0);
+    //const arrOrderToppings = this._toppings;
+    let sumCaloriesToppings = this._toppings.reduce((acc, obj) => acc + obj.calories, 0);
 
     return sumCalories + sumCaloriesToppings;
 
@@ -175,27 +181,35 @@ class Hamburger {
     price: 50,
     calories: 100,
   };
+
   static STUFFING_CHEESE = {
     price: 15,
     calories: 20,
   };
+
   static STUFFING_SALAD = {
     price: 20,
     calories: 5,
   };
+
   static STUFFING_MEAT = {
     price: 30,
     calories: 15,
   };
+
   static TOPPING_SPICE = {
     price: 10,
     calories: 0,
   };
+
   static TOPPING_SAUCE = {
     price: 15,
     calories: 5,
   };
-};
+
+}
+
+
 /* Вот как может выглядеть использование этого класса */
 
 // Маленький гамбургер с начинкой из сыра
