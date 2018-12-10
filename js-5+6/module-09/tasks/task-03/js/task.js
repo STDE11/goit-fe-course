@@ -40,12 +40,19 @@ let isActive = false;
 startBtn.addEventListener('click', startTimer);
 stopBtn.addEventListener('click', stopTimer);
 
+startBtn.addEventListener('click', setActiveBtn);
+stopBtn.addEventListener('click', setActiveBtn);
+
+//setActiveBtn(); 
+// 
 
 function startTimer() {
   
+
   if(isActive) {return;}
   isActive = true;
-  setActiveBtn;
+  //setActiveBtn();
+  //setActiveBtn({target});
   timer.startTime = Date.now();
   
   timer.id = setInterval(() => {
@@ -53,7 +60,7 @@ function startTimer() {
     timer.deltaTime = currentTime - timer.startTime;
     const time = new Date(timer.deltaTime);
 
-    const clock = updateClockface(clockface, time);
+    updateClockface(clockface, time);
     //console.log(typeof clock);
     }, 100);
 }
@@ -66,7 +73,6 @@ function stopTimer() {
   isActive = false;
   clockface.textContent = `00:00.0`;
 }
-
 
 function getFormattedTime(time) {
   const data = new Date(time);
@@ -81,8 +87,6 @@ function getFormattedTime(time) {
 
   return `${minutes}:${seconds}.${ms}`
 }
-
-
 
 /*
 * Вспомогательные функции
