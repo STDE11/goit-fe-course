@@ -34,30 +34,37 @@ const timer = {
   id: null
 };
 
-let time;
+let isActive = false;
+
+
 startBtn.addEventListener('click', startTimer);
 stopBtn.addEventListener('click', stopTimer);
 
+
 function startTimer() {
+  
+  if(isActive) {return;}
+  isActive = true;
+  setActiveBtn;
   timer.startTime = Date.now();
-      //console.log('startTime', timer.startTime);
+  
   timer.id = setInterval(() => {
     const currentTime = Date.now();
-    //timer.deltaTime = currentTime - timer.startTime;
     timer.deltaTime = currentTime - timer.startTime;
-   return time = new Date(timer.deltaTime);
+    const time = new Date(timer.deltaTime);
 
-    
-
-    console.log('time ', time);}, 1000);
-      //console.log('id', timer.id);
-  //timer.deltaTime = timer.id - timer.startTime;
-  //console.log('deltaTime:', timer.deltaTime);
-
+    const clock = updateClockface(clockface, time);
+    //console.log(typeof clock);
+    }, 100);
 }
 
 function stopTimer() {
   clearInterval(timer.id);
+  timer.startTime = null;
+  timer.deltaTime =null;
+  timer.id = null;
+  isActive = false;
+  clockface.textContent = `00:00.0`;
 }
 
 
@@ -87,13 +94,13 @@ function getFormattedTime(time) {
 */
 function updateClockface(elem, time) {
   // Используйте функцию getFormattedTime из задания #1
-  // elem.textContent = getFormattedTime(time);
+   elem.textContent = getFormattedTime(time);
 }
 
 /*
 * Подсветка активной кнопки
 */
-function setActiveBtn(target) {
+function setActiveBtn({target}) {
   if (target.classList.contains('active')) {
     return;
   }
