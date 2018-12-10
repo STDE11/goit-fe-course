@@ -45,11 +45,13 @@ function createPostCard(elem) {
     button.classList.add('button');
     button.href = elem.link;
     button.textContent = "Read more";
-    
+
   card.appendChild(image);
   card.appendChild(title);
   card.appendChild(text);
-  card.appendChild(button);
+  card.appendChild(batton);   
+    
+  
   return card;
 }
 

@@ -31,6 +31,9 @@ function setGalleryItems(elems) {
         image.setAttribute('src', elem.preview);
         image.setAttribute('data-fullview', elem.fullview);
         image.setAttribute('alt', elem.alt);
+        //image.setAttribute('src', elem.preview, 'data-fullview', elem.fullview, 'alt', elem.alt);
+
+
         item.append(image);
         preview.append(item);
     });
@@ -42,8 +45,9 @@ function setGalleryItems(elems) {
 }
 
 function handGalleryItemClick({target}) {
+    //event.preventDefault();
     const nodeName = target.nodeName;
-    event.preventDefault();
+    //event.preventDefault();
     if (nodeName !== 'IMG') return;
     insertFullviewImage(preview, target)
     
@@ -51,7 +55,9 @@ function handGalleryItemClick({target}) {
 
 
 function insertFullviewImage(preview, target) {
-    const previewItems = preview.querySelectorAll('img'); 
+    event.preventDefault();
+    const previewItems = preview.querySelectorAll('img');
+    //event.preventDefault(); 
     
     previewItems.forEach(previewItem => {
         if(previewItem !== target) {

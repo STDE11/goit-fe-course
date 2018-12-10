@@ -34,6 +34,49 @@ const timer = {
   id: null
 };
 
+let time;
+startBtn.addEventListener('click', startTimer);
+stopBtn.addEventListener('click', stopTimer);
+
+function startTimer() {
+  timer.startTime = Date.now();
+      //console.log('startTime', timer.startTime);
+  timer.id = setInterval(() => {
+    const currentTime = Date.now();
+    //timer.deltaTime = currentTime - timer.startTime;
+    timer.deltaTime = currentTime - timer.startTime;
+   return time = new Date(timer.deltaTime);
+
+    
+
+    console.log('time ', time);}, 1000);
+      //console.log('id', timer.id);
+  //timer.deltaTime = timer.id - timer.startTime;
+  //console.log('deltaTime:', timer.deltaTime);
+
+}
+
+function stopTimer() {
+  clearInterval(timer.id);
+}
+
+
+function getFormattedTime(time) {
+  const data = new Date(time);
+
+  const min = data.getMinutes() + '';
+  const minutes = min < 10 ? 0 + min : min;
+
+  const sec = data.getSeconds() + '';
+  const seconds = sec < 10 ? 0 + sec : sec;
+
+  const ms = Number.parseInt(data.getMilliseconds() / 100);
+
+  return `${minutes}:${seconds}.${ms}`
+}
+
+
+
 /*
 * Вспомогательные функции
 */
