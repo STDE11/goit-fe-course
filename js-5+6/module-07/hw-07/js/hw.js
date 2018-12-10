@@ -49,7 +49,7 @@ function createPostCard(elem) {
   card.appendChild(image);
   card.appendChild(title);
   card.appendChild(text);
-  card.appendChild(batton);   
+  card.appendChild(button);   
     
   
   return card;
