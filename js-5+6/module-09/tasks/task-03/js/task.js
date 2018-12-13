@@ -43,16 +43,14 @@ stopBtn.addEventListener('click', stopTimer);
 startBtn.addEventListener('click', setActiveBtn);
 stopBtn.addEventListener('click', setActiveBtn);
 
-//setActiveBtn(); 
-// 
+ 
 
 function startTimer() {
   
 
   if(isActive) {return;}
   isActive = true;
-  //setActiveBtn();
-  //setActiveBtn({target});
+  
   timer.startTime = Date.now();
   
   timer.id = setInterval(() => {
@@ -61,7 +59,7 @@ function startTimer() {
     const time = new Date(timer.deltaTime);
 
     updateClockface(clockface, time);
-    //console.log(typeof clock);
+    
     }, 100);
 }
 

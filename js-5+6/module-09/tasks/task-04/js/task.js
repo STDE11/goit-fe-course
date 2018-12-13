@@ -27,13 +27,41 @@ const DELAY = 1000;
 
 let goodsAmount = 100;
 
+
+function processOrder(amount) {
+  // const DELAY = 1000;
+  // let goodsAmount = 100;
+  
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (!Number.isNaN(Number(amount))) {
+        
+        if (amount <= goodsAmount) {
+          resolve("Ваш заказ готов!");
+        } 
+          resolve("К сожалению на складе недостаточно товаров!");
+      }
+
+      reject("Некоректный ввод!")
+      
+    }, DELAY)
+  })
+  
+}
+
+
+
 // Вызовы функции для проверки
 processOrder(50)
   .then(result => console.log(result)) // Ваш заказ готов!
   .catch(err => console.log(err));
 
-processOrder(50)
+processOrder(100)
   .then(result => console.log(result)) // Ваш заказ готов!
+  .catch(err => console.log(err));
+
+processOrder(101)
+  .then(result => console.log(result)) // К сожалению на складе недостаточно товаров!
   .catch(err => console.log(err));
 
 processOrder(500)
@@ -44,3 +72,9 @@ processOrder("qwe")
   .then(result => console.log(result))
   .catch(err => console.log(err)); // Некоректный ввод!
 
+
+
+// const executed = "Ваш заказ готов!";
+// const declined = "К сожалению на складе недостаточно товаров!";
+// const verification = "";
+// const inCorrectly = "Некоректный ввод!";
