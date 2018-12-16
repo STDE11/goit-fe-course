@@ -35,11 +35,9 @@ do {
   userInput = prompt('Введите число');
 
   input = Number(userInput);
-
-  if (input === NaN) {  //Почему это выражение не срабатывает?
-
+ 
+  if (Number.isNaN(input)) {
    alert(`Было введено не число, попробуйте еще раз`); 
-
   }
 
   numbers.push(input);
@@ -51,6 +49,6 @@ do {
     total += numbers[i];
 
   }
-  
+
 alert(`Общая сумма чисел равна ${total}`);
 
