@@ -30,6 +30,7 @@ img {
 
 .fullview {
     display: flex;
+    width: 1280px;
     justify-content: center;
     margin-bottom: 8px;
     border: solid 4px #fff;
