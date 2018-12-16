@@ -54,32 +54,30 @@ const login = prompt('Введите новый login:');
 
 
 //проверяет количество символов логина
-const checkLoginValidity = () => {
-  return ((4 <= login.length) && (login.length <= 16))
-    ? true
-    : false;
-};
+const checkLoginValidity = () => 
+  ((4 <= login.length) && (login.length <= 16));
 
 //проверяет наличие логина в массиве logins
-const checkIfLoginExists = () => {
-  return logins.includes(login)
-};
+const checkIfLoginExists = () => 
+  logins.includes(login);
 
 
 
 
-function addLogin(logins, login) {
-  if (checkLoginValidity(login) === false) {
+function addLogin(elms, elm) {
+  if (!checkLoginValidity(elm)) {
     alert('Ошибка! Логин должен быть от 4 до 16 символов');
-    return;
-  } else {if (checkIfLoginExists(logins, login) === false) {
-    alert ('Логин успешно добавлен!');
-    return logins.push(login);
+    
   } else {
-    alert ('Такой логин уже используется!');
+    if (!checkIfLoginExists(elms, elm) ) {
+      elms.push(elm);
+      alert ('Логин успешно добавлен!');
+           
+          } else {
+            alert ('Такой логин уже используется!');
+          }
   }
 
-}
 }
  
 addLogin(logins, login);
