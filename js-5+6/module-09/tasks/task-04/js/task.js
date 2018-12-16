@@ -72,9 +72,3 @@ processOrder("qwe")
   .then(result => console.log(result))
   .catch(err => console.log(err)); // Некоректный ввод!
 
-
-
-// const executed = "Ваш заказ готов!";
-// const declined = "К сожалению на складе недостаточно товаров!";
-// const verification = "";
-// const inCorrectly = "Некоректный ввод!";
