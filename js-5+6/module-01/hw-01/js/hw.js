@@ -30,7 +30,7 @@ const ADMIN_PASSWORD = 'm4ngo1zh4ackz0r';//
 
 let login = prompt(' Введите логин:');
 let password;
-let message;
+
 const ANNIENTED = ' Отменено пользователем!';
 const NOT_ACCESS = ' Доступ запрещен!';
 const WELCOME = ' Добро пожаловать!';
