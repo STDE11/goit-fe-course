@@ -1,6 +1,6 @@
-//Модуль 6 - Домашнее задание
-'use strict';
 
+'use strict';
+//Модуль 6 - Домашнее задание
 /*
   Сеть фастфудов предлагает несколько видов гамбургеров.
   Основа (булочка) гамбургера может быть большой или маленькой (обязательно):
@@ -52,10 +52,7 @@ class Hamburger {
   removeTopping(topping) {
 
     //проверить была ли добавлена эта добавка и если да то удалить ее
-    return this._toppings.includes(topping)
-      ? this._toppings.splice(this._toppings.indexOf(topping), 1) 
-      : this._toppings;
-
+   return this._toppings = this._toppings.filter(item => item !== topping); 
   }
 
   /**
@@ -68,9 +65,9 @@ class Hamburger {
     return this._toppings;
   }
 
-  get toppings() {
-    return this._toppings;
-  }
+  // get toppings() {
+  //   return this._toppings;
+  // }
 
   /**
    * Узнать размер гамбургера
@@ -104,15 +101,12 @@ class Hamburger {
 
     const arrOrder = [this._size, this._stuffing];
     let sumPrice = arrOrder.reduce((acc, obj) => acc + obj.price, 0);
-
-    // const arrOrderToppings = this._toppings;
-    // let sumPriceToppings = arrOrderToppings.reduce((acc, obj) => acc + obj.price, 0);
     
     let sumPriceToppings = this._toppings.reduce((acc, obj) => acc + obj.price, 0);
 
     return sumPrice + sumPriceToppings;
 
-  };
+  }
 
 
   /**
@@ -126,9 +120,6 @@ class Hamburger {
     const arrOrder = [this._size, this._stuffing];
     let sumCalories = arrOrder.reduce((acc, obj) => acc + obj.calories, 0);
 
-    // const arrOrderToppings = this._toppings;
-    // let sumCaloriesToppings = arrOrderToppings.reduce((acc, obj) => acc + obj.calories, 0);
-    //const arrOrderToppings = this._toppings;
     let sumCaloriesToppings = this._toppings.reduce((acc, obj) => acc + obj.calories, 0);
 
     return sumCalories + sumCaloriesToppings;
@@ -140,7 +131,7 @@ class Hamburger {
     Размеры, виды добавок и начинок объявите как статические поля класса.
     Добавьте отсутсвующие поля по аналогии с примером.
   */
-  /*Hamburger.SIZE_SMALL = 'SIZE_SMALL';
+ /* Hamburger.SIZE_SMALL = 'SIZE_SMALL';
   Hamburger.SIZE_LARGE = ...
   
   Hamburger.SIZES = {
@@ -169,43 +160,43 @@ class Hamburger {
       price: 10,
       calories: 0,
     },
-  };
-  */
+  };*/
+  
 
   static SIZE_SMALL = {
     price: 30,
     calories: 50,
-  };
+  }
 
   static SIZE_LARGE = {
     price: 50,
     calories: 100,
-  };
+  }
 
   static STUFFING_CHEESE = {
     price: 15,
     calories: 20,
-  };
+  }
 
   static STUFFING_SALAD = {
     price: 20,
     calories: 5,
-  };
+  }
 
   static STUFFING_MEAT = {
     price: 30,
     calories: 15,
-  };
+  }
 
   static TOPPING_SPICE = {
     price: 10,
     calories: 0,
-  };
+  }
 
   static TOPPING_SAUCE = {
     price: 15,
     calories: 5,
-  };
+  }
 
 }
 
