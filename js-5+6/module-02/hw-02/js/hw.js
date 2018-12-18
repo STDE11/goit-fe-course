@@ -29,6 +29,8 @@ let userInput;
 let input;
 const numbers = [];
 let total = 0;
+const MESSAGE_NOT_NUMBERS_ENTERED = `Было введено не число, попробуйте еще раз`
+const MESSAGE_TOTAL_SUM = `Общая сумма чисел равна `
 
 do {
   
@@ -36,19 +38,30 @@ do {
 
   input = Number(userInput);
  
-  if (Number.isNaN(input)) {
-   alert(`Было введено не число, попробуйте еще раз`); 
-  }
+  if (Number.isNaN(input) || userInput === '' || userInput === ' ') {
+    
+    alert(MESSAGE_NOT_NUMBERS_ENTERED); 
 
-  numbers.push(input);
+  } else if (userInput !== null ) {
+
+    numbers.push(input);
+
+  } 
+
+  
 
 } while (userInput !== null);
+
+console.log(numbers);
  
-  for (let i = 0; i < numbers.length; i += 1) {
+if (numbers.length !== 0) {
+    for (let i of numbers) {
+      total += i;
+    }
 
-    total += numbers[i];
+  alert(MESSAGE_TOTAL_SUM + total);
+} 
 
-  }
 
-alert(`Общая сумма чисел равна ${total}`);
+
 
