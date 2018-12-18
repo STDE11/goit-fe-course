@@ -61,6 +61,7 @@ class Hamburger {
    *
    * Попробуйте сделать это геттером чтобы можно было обращаться как obj.toppings и нам вернет массив добавок
    */
+  
   get toppings() {
     return this._toppings;
   }

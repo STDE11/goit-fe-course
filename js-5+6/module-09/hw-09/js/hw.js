@@ -75,6 +75,9 @@ const jsTakeLap = document.querySelector('.js-take-lap');
 const jsReset = document.querySelector('.js-reset')
     jsReset.disabled = true; 
 const jsLaps = document.querySelector('.js-laps');
+//const li = jsLaps.querySelectorAll('li');
+
+//let li = null;
 
 
 
@@ -87,10 +90,10 @@ class Stopwatchs {
         this.pauseTime = 0;
         this.timerId = null;
         this.isActive = false;
-        this.isActiveCounter = false;
         this.onTick = onTick;
         this.stopTime = null;
         this.lapArr = [];
+        this.lapElem = null;
        
     }
 
@@ -112,20 +115,15 @@ class Stopwatchs {
     
    
     start() {
-        
         if (!this.isActive) {
             this.isActive = true;
             jsStart.textContent = 'Pause';
-            if (!this.isActiveCounter) {
-                this.startTime = Date.now();
-                this.isActiveCounter = true;
-                jsReset.disabled = false; 
-            
-            }
-            
+            jsReset.disabled = false; 
+            this.startTime = Date.now();
+                        
             this.timerId = setInterval(() => {
                 this.currentTime = Date.now();
-                this.deltatime = this.currentTime - this.startTime; 
+                this.deltatime = this.currentTime - this.startTime + this.pauseTime; 
                 const time = this.formatTime(this.deltatime);
                 this.onTick(time);
             }, 100);
@@ -144,15 +142,15 @@ class Stopwatchs {
         this.lapArr.push(this.deltatime);
         console.log('lapArr:', this.lapArr);
         
-        const lapElem = document.createElement('li');
+        this.lapElem = document.createElement('li');
         
         const time = this.formatTime(this.deltatime);
        
         const lapTime = `${time.minutes}:${time.seconds}.${time.ms}`;
         
-        lapElem.textContent = lapTime;
+        this.lapElem.textContent = lapTime;
                 
-        jsLaps.append(lapElem);
+        jsLaps.append(this.lapElem  );
 
     }
 
@@ -164,11 +162,23 @@ class Stopwatchs {
         this.pauseTime = 0;
         this.timerId = null;
         this.isActive = false;
-        this.isActiveCounter = false;
         jsReset.disabled = true;
         this.onTick({minutes: '00', seconds: '00', ms: '0'})
         this.lapArr = [];
         jsTime.textContent = `00:00.0`;
+        const li = jsLaps.querySelectorAll('li');
+        //const li = Array.from(jsLaps.querySelectorAll('li'));
+        //li.slice(0, li.length);
+        //jsLaps.removeChild(li);
+        //console.log(li);
+        console.log('jsLaps', jsLaps);
+        //jsLaps.children
+        //li.remove();
+        jsLaps.children.remove();
+        console.log('li', li);
+        console.log(Array.isArray(li));
+        //console.log(jsLaps.children);
+
 
     }
 }

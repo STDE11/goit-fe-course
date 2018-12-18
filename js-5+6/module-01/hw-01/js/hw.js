@@ -31,20 +31,37 @@ const ADMIN_PASSWORD = 'm4ngo1zh4ackz0r';//
 let login = prompt(' Введите логин:');
 let password;
 
-const ANNIENTED = ' Отменено пользователем!';
-const NOT_ACCESS = ' Доступ запрещен!';
-const WELCOME = ' Добро пожаловать!';
+const MESSAGE_CANCELED = ' Отменено пользователем!';
+const MESSAGE_DENIED = ' Доступ запрещен!';
+const MESSAGE_GRANTED = ' Добро пожаловать!';
 
 
+
+// if (login === null) {
+//     alert(MESSAGE_CANCELED);
+// } else if (login !== ADMIN_LOGIN) {
+//     alert(MESSAGE_DENIED);
+// } else if ((password = prompt(' Введите пароль:')) === null) {
+//     alert(MESSAGE_CANCELED);
+// } else if (password === ADMIN_PASSWORD) {
+//     alert(MESSAGE_GRANTED);
+// } else {
+//     alert(MESSAGE_DENIED);
+// }
 
 if (login === null) {
-    alert(ANNIENTED);
+    alert(MESSAGE_CANCELED);
 } else if (login !== ADMIN_LOGIN) {
-    alert(NOT_ACCESS);
-} else if ((password = prompt(' Введите пароль:')) === null) {
-    alert(ANNIENTED);
-} else if (password === ADMIN_PASSWORD) {
-    alert(WELCOME);
+    alert(MESSAGE_DENIED);
 } else {
-    alert(NOT_ACCESS);
+   (password = prompt(' Введите пароль:'))
+   if (password === null) {
+       alert(MESSAGE_CANCELED );
+   } else if (password !== ADMIN_PASSWORD) {
+       alert(MESSAGE_DENIED);
+   }else {
+    alert(MESSAGE_GRANTED);
+   }
 }
+
+
