@@ -38,18 +38,31 @@ const MESSAGE_GRANTED = ' Добро пожаловать!';
 
 
 if (login === null) {
+
     alert(MESSAGE_CANCELED);
+
 } else if (login !== ADMIN_LOGIN) {
+
     alert(MESSAGE_DENIED);
+
 } else {
+
    (password = prompt(' Введите пароль:'))
+
    if (password === null) {
+
        alert(MESSAGE_CANCELED );
+
    } else if (password !== ADMIN_PASSWORD) {
+
        alert(MESSAGE_DENIED);
-   }else {
+
+   } else {
+
     alert(MESSAGE_GRANTED);
+
    }
+   
 }
 
 
