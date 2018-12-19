@@ -34,23 +34,22 @@ const MESSAGE_TOTAL_SUM = `Общая сумма чисел равна `
 
 do {
   
-  
   userInput = prompt('Введите число');
+ 
+  if (Number.isNaN(+userInput) || userInput === '' || userInput === ' ') {
+    
+    alert(MESSAGE_NOT_NUMBERS_ENTERED); 
 
-    if (!Number.isNaN(+userInput) && userInput !== null) {
+  } else if (userInput !== null ) {
 
-    numbers.push(+userInput); 
+    numbers.push(+userInput);
 
-  } else { 
+  } 
 
-    alert(MESSAGE_NOT_NUMBERS_ENTERED);
-  }
-  
-
+ 
 } while (userInput !== null);
 
-console.log(numbers);
-      
+      console.log(numbers);
 if (numbers.length > 0) {
     for (let i of numbers) {
       total += i;
