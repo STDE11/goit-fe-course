@@ -49,6 +49,7 @@ do {
 
 } while (userInput !== null);
 
+console.log(numbers);
       
 if (numbers.length > 0) {
     for (let i of numbers) {
