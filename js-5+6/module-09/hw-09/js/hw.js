@@ -74,10 +74,11 @@ const jsStart = document.querySelector('.js-start');
 const jsTakeLap = document.querySelector('.js-take-lap');
 const jsReset = document.querySelector('.js-reset')
     jsReset.disabled = true; 
-const jsLaps = document.querySelector('.js-laps');
+//const jsLaps = document.querySelector('.js-laps');
+let jsLaps = null;
 //const li = jsLaps.querySelectorAll('li');
 
-//let li = null;
+let li = null;
 
 
 
@@ -93,7 +94,7 @@ class Stopwatchs {
         this.onTick = onTick;
         this.stopTime = null;
         this.lapArr = [];
-        this.lapElem = null;
+        //this.lapLi = null;
        
     }
 
@@ -116,6 +117,7 @@ class Stopwatchs {
    
     start() {
         if (!this.isActive) {
+            jsLaps = document.querySelector('.js-laps');
             this.isActive = true;
             jsStart.textContent = 'Pause';
             jsReset.disabled = false; 
@@ -140,17 +142,17 @@ class Stopwatchs {
 
     takeLap() {
         this.lapArr.push(this.deltatime);
-        console.log('lapArr:', this.lapArr);
-        
-        this.lapElem = document.createElement('li');
         
         const time = this.formatTime(this.deltatime);
        
         const lapTime = `${time.minutes}:${time.seconds}.${time.ms}`;
+        //this.lapLi = document.createElement('li');
         
-        this.lapElem.textContent = lapTime;
+        console.log('lapArr:', this.lapArr);
+        li = document.createElement('li');
+        li.textContent = lapTime;
                 
-        jsLaps.append(this.lapElem  );
+        jsLaps.append(li);
 
     }
 
@@ -165,23 +167,29 @@ class Stopwatchs {
         jsReset.disabled = true;
         this.onTick({minutes: '00', seconds: '00', ms: '0'})
         this.lapArr = [];
+        jsLaps = null;
         jsTime.textContent = `00:00.0`;
-        const li = jsLaps.querySelectorAll('li');
-        //const li = Array.from(jsLaps.querySelectorAll('li'));
+        //const li = jsLaps.querySelectorAll('li');
+        //const li_All = Array.from(jsLaps.querySelectorAll('li'));
         //li.slice(0, li.length);
-        //jsLaps.removeChild(li);
-        //console.log(li);
+        //jsLaps.remove(li);
+        jsLaps.remove();
+        //console.log('li_All:', li_All);
+        console.log('jsLaps.children:', jsLaps.children)
         console.log('jsLaps', jsLaps);
         //jsLaps.children
         //li.remove();
-        jsLaps.children.remove();
+        //Array.from(jsLaps.children).remove();
+        //jsLaps.children
         console.log('li', li);
-        console.log(Array.isArray(li));
-        //console.log(jsLaps.children);
+        console.log('isArray(li):', Array.isArray(li));
+        console.log('jsLaps.childre', Array.from(jsLaps.children));
 
 
     }
 }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 const parentA = new Stopwatchs({
     onTick: updateWatch,

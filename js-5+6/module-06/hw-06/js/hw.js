@@ -52,7 +52,8 @@ class Hamburger {
   removeTopping(topping) {
 
     //проверить была ли добавлена эта добавка и если да то удалить ее
-   return this._toppings = this._toppings.filter(item => item !== topping); 
+   //return this._toppings = this._toppings.filter(item => item !== topping); 
+    return this._toppings = this._toppings.filter(item => item !== topping);
   }
 
   /**
