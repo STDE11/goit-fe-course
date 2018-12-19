@@ -188,8 +188,10 @@ console.log(getTotalBalance(users)); // 20916
  */
 const getUsersByFriend = (users, name) => 
   
-  users.filter(user => user.friends.find(el => el === name))
- .map(userWisFrend => userWisFrend.name);
+  //users.filter(user => user.friends.find(el => el === name))
+  users
+  .filter(user => user.friends.includes(name))  
+  .map(userWisFrend => userWisFrend.name);
 
 
 console.log(getUsersByFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
