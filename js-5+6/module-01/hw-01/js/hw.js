@@ -37,18 +37,6 @@ const MESSAGE_GRANTED = ' Добро пожаловать!';
 
 
 
-// if (login === null) {
-//     alert(MESSAGE_CANCELED);
-// } else if (login !== ADMIN_LOGIN) {
-//     alert(MESSAGE_DENIED);
-// } else if ((password = prompt(' Введите пароль:')) === null) {
-//     alert(MESSAGE_CANCELED);
-// } else if (password === ADMIN_PASSWORD) {
-//     alert(MESSAGE_GRANTED);
-// } else {
-//     alert(MESSAGE_DENIED);
-// }
-
 if (login === null) {
     alert(MESSAGE_CANCELED);
 } else if (login !== ADMIN_LOGIN) {
