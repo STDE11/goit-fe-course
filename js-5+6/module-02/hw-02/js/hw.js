@@ -34,25 +34,10 @@ const MESSAGE_TOTAL_SUM = `Общая сумма чисел равна `
 
 do {
   
-  // userInput = prompt('Введите число');
-
-  // //input = Number(userInput);
- 
-  // if (Number.isNaN(+userInput) || userInput === '' || userInput === ' ') {
-    
-  //   alert(MESSAGE_NOT_NUMBERS_ENTERED); 
-
-  // } else if (userInput !== null ) {
-
-  //   numbers.push(input);
-
-  // } 
-
+  
   userInput = prompt('Введите число');
 
-  //input = Number(userInput);
-
-  if (!Number.isNaN(+userInput) && userInput !== null) {
+    if (!Number.isNaN(+userInput) && userInput !== null) {
 
     numbers.push(+userInput); 
 
@@ -62,12 +47,9 @@ do {
   }
   
 
-  
-
 } while (userInput !== null);
 
-      console.log(numbers);
- 
+      
 if (numbers.length > 0) {
     for (let i of numbers) {
       total += i;
