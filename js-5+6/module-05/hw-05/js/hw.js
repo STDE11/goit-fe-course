@@ -103,11 +103,15 @@ const users = [
   },
 ];
 
+
+
+
+
+
+
 /**
  * Получить массив имен (поле name) всех пользователей
  */
-
-
 
 //function getAllNames(arr) {
 const getAllNames = arr => 
@@ -131,7 +135,8 @@ console.log(getUsersByEyeColor(users, 'blue')); // [объект Moore Hensley, 
  * Получить массив имен пользователей по полу (поле gender)
  */
 const getUsersByGender = (arr, gender) => 
-  arr.filter(obj => obj.gender === gender).map(objGender => objGender.name);
+  arr.filter(obj => obj.gender === gender)
+  .map(objGender => objGender.name);
 
 console.log(getUsersByGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
@@ -182,7 +187,8 @@ console.log(getTotalBalance(users)); // 20916
  */
 const getUsersByFriend = (arr, name) => 
   
- arr.filter(obj => obj.friends.find(el => el === name)).map(userWisFrend => userWisFrend.name);
+ arr.filter(obj => obj.friends.find(el => el === name))
+ .map(userWisFrend => userWisFrend.name);
 
 
 console.log(getUsersByFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
