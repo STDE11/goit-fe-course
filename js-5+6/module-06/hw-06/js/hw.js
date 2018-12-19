@@ -1,6 +1,9 @@
 
 'use strict';
 //Модуль 6 - Домашнее задание
+
+
+
 /*
   Сеть фастфудов предлагает несколько видов гамбургеров.
   Основа (булочка) гамбургера может быть большой или маленькой (обязательно):
@@ -39,8 +42,8 @@ class Hamburger {
    * Добавить topping к гамбургеру. Можно добавить несколько topping, при условии, что они разные.
    * @param {String} topping - Тип добавки
    */
-  addTopping(topping) {
-    return this._toppings.includes(topping)
+  addTopping(topping) {   //Записывает в свойство
+    this._toppings.includes(topping)
       ? this._toppings 
       : this._toppings.push(topping);
   }
@@ -49,11 +52,11 @@ class Hamburger {
    * Убрать topping, при условии, что она ранее была добавлена
    * @param {String} topping - Тип добавки
    */
-  removeTopping(topping) {
+  removeTopping(topping) {   //Записывает в свойство
 
     //проверить была ли добавлена эта добавка и если да то удалить ее
-   //return this._toppings = this._toppings.filter(item => item !== topping); 
-    return this._toppings = this._toppings.filter(item => item !== topping);
+
+    this._toppings = this._toppings.filter(thisTopping => thisTopping === topping)
   }
 
   /**
@@ -62,14 +65,10 @@ class Hamburger {
    *
    * Попробуйте сделать это геттером чтобы можно было обращаться как obj.toppings и нам вернет массив добавок
    */
-  
-  get toppings() {
+  get toppings() {  //Возвращает значение
     return this._toppings;
   }
 
-  // get toppings() {
-  //   return this._toppings;
-  // }
 
   /**
    * Узнать размер гамбургера
@@ -78,7 +77,7 @@ class Hamburger {
    * Попробуйте сделать это геттером чтобы можно было обращаться как obj.size и нам вернет размер
    */
 
-  get size() {
+  get size() {  //Возвращает значение
     return this._size;
   }
 
@@ -89,7 +88,7 @@ class Hamburger {
    * Попробуйте сделать это геттером чтобы можно было обращаться как obj.stuffing и нам вернет начинку
    */
 
-  get stuffing() {
+  get stuffing() {  //Возвращает значение
     return this._stuffing;
   }
 
@@ -99,16 +98,16 @@ class Hamburger {
    *
    * Попробуйте сделать это геттером чтобы можно было обращаться как obj.price и нам вернет сумму.
    */
-  get price() {
+  get price() {  //Возвращает значение
 
-    const arrOrder = [this._size, this._stuffing];
-    let sumPrice = arrOrder.reduce((acc, obj) => acc + obj.price, 0);
-    
-    let sumPriceToppings = this._toppings.reduce((acc, obj) => acc + obj.price, 0);
+    const arrOrders = [this._size, this._stuffing];
+    let sumPrice = arrOrders.reduce((acc, order) => acc + order.price, 0);
+
+    let sumPriceToppings = this._toppings.reduce((acc, topping) => acc + topping.price, 0);
 
     return sumPrice + sumPriceToppings;
 
-  }
+  };
 
 
   /**
@@ -117,12 +116,12 @@ class Hamburger {
    *
    * Попробуйте сделать это геттером чтобы можно было обращаться как obj.calories и нам вернет сумму.
    */
-  get calories() {
+  get calories() {  //Возвращает значение
 
-    const arrOrder = [this._size, this._stuffing];
-    let sumCalories = arrOrder.reduce((acc, obj) => acc + obj.calories, 0);
+    const arrOrders = [this._size, this._stuffing];
+    let sumCalories = arrOrders.reduce((acc, order) => acc + order.calories, 0);
 
-    let sumCaloriesToppings = this._toppings.reduce((acc, obj) => acc + obj.calories, 0);
+    let sumCaloriesToppings = this._toppings.reduce((acc, topping) => acc + topping.calories, 0);
 
     return sumCalories + sumCaloriesToppings;
 
@@ -133,80 +132,96 @@ class Hamburger {
     Размеры, виды добавок и начинок объявите как статические поля класса.
     Добавьте отсутсвующие поля по аналогии с примером.
   */
- /* Hamburger.SIZE_SMALL = 'SIZE_SMALL';
-  Hamburger.SIZE_LARGE = ...
+  // Hamburger.SIZE_SMALL = 'SIZE_SMALL';
+  // Hamburger.SIZE_LARGE = 'SIZE_LARGE';
   
-  Hamburger.SIZES = {
-    [Hamburger.SIZE_SMALL]: {
-      price: 30,
-      calories: 50,
-    },
-  };
+  // Hamburger.SIZES = {
+  //   [Hamburger.SIZE_SMALL]: {
+  //     price: 30,
+  //     calories: 50,
+  //   },
+
+  //   [Hamburger.SIZE_LARGE]: {
+  //     price: 50,
+  //     calories: 100,
+  //   },
+  // };
   
-  Hamburger.STUFFING_CHEESE = 'STUFFING_CHEESE';
-  Hamburger.STUFFING_SALAD = ...
-  Hamburger.STUFFING_MEAT = ...
+  // Hamburger.STUFFING_CHEESE = 'STUFFING_CHEESE';
+  // Hamburger.STUFFING_SALAD = 'STUFFING_SALAD';
+  // Hamburger.STUFFING_MEAT = 'STUFFING_MEAT';
   
-  Hamburger.STUFFINGS = {
-    [Hamburger.STUFFING_CHEESE]: {
-      price: 15,
-      calories: 20,
-    },
-  };
+  // Hamburger.STUFFINGS = {
+  //   [Hamburger.STUFFING_CHEESE]: {
+  //     price: 15,
+  //     calories: 20,
+  //   },
+
+  //   [Hamburger.STUFFING_SALAD]: {
+  //     price: 20,
+  //     calories: 5,
+  //   },
+
+  //   [Hamburger.STUFFING_MEAT]: {
+  //     price: 30,
+  //     calories: 15,
+  //   },
+  // };
   
-  Hamburger.TOPPING_SPICE = 'TOPPING_SPICE';
-  Hamburger.TOPPING_SAUCE = ...
+  // Hamburger.TOPPING_SPICE = 'TOPPING_SPICE';
+  // Hamburger.TOPPING_SAUCE = 'TOPPING_SAUCE';
   
-  Hamburger.TOPPINGS = {
-    [Hamburger.TOPPING_SPICE]: {
-      price: 10,
-      calories: 0,
-    },
-  };*/
+  // Hamburger.TOPPINGS = {
+  //   [Hamburger.TOPPING_SPICE]: {
+  //     price: 10,
+  //     calories: 0,
+  //   },
+
+  //   [Hamburger.TOPPING_SAUCE]: {
+  //     price: 15,
+  //     calories: 5,
+  //   },
+  // };
   
 
   static SIZE_SMALL = {
     price: 30,
     calories: 50,
-  }
+  };
 
   static SIZE_LARGE = {
     price: 50,
     calories: 100,
-  }
+  };
 
   static STUFFING_CHEESE = {
     price: 15,
     calories: 20,
-  }
-
+  };
   static STUFFING_SALAD = {
     price: 20,
     calories: 5,
-  }
-
+  };
   static STUFFING_MEAT = {
     price: 30,
     calories: 15,
-  }
-
+  };
   static TOPPING_SPICE = {
     price: 10,
     calories: 0,
-  }
-
+  };
   static TOPPING_SAUCE = {
     price: 15,
     calories: 5,
-  }
+  };
 
-}
-
+};
 
 /* Вот как может выглядеть использование этого класса */
 
 // Маленький гамбургер с начинкой из сыра
 const hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
+
 
 // Добавка из приправы
 hamburger.addTopping(Hamburger.TOPPING_SPICE);
