@@ -1,6 +1,6 @@
 'use strict';
 
-//HW
+//HW-03
 
 
 /*
@@ -48,9 +48,51 @@
         возвращая указанные строки. Больше ничего не делает.
 */
 
-const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+//const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
-const login = prompt('Введите новый login:');
+//const login = prompt('Введите новый login:');
+
+
+// const ERR_LOGIN_SHORT_LONG = 'Ошибка! Логин должен быть от 4 до 16 символов';
+// const LOGIN_IS_ADDED = 'Логин успешно добавлен!';
+// const LOGIN_IS_BUSY = 'Такой логин уже используется!';
+
+
+// //проверяет количество символов логина
+// const checkLoginValidity = elm =>
+//   (4 <= elm.length && elm.length <= 16);
+
+// //проверяет наличие логина в массиве logins
+// const checkIfLoginExists = (elms, elm) =>
+//   elms.includes(elm);
+
+
+
+
+// function addLogin(elms, elm) {
+//   if (elm !== null) {
+//   if (!checkLoginValidity(elm)) {
+//     alert(ERR_LOGIN_SHORT_LONG);
+    
+//   } else {
+//     if (!checkIfLoginExists(elms, elm) ) {
+//       elms.push(elm);
+//       alert(LOGIN_IS_ADDED);
+           
+//           } else {
+//       alert(LOGIN_IS_BUSY);
+//           }
+//   }
+
+// }
+// }
+ 
+// addLogin(logins, login);
+// console.log(logins);
+
+const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+const login = 'Mangogfh';
+
 
 const ERR_LOGIN_SHORT_LONG = 'Ошибка! Логин должен быть от 4 до 16 символов';
 const LOGIN_IS_ADDED = 'Логин успешно добавлен!';
@@ -70,22 +112,22 @@ const checkIfLoginExists = (elms, elm) =>
 
 function addLogin(elms, elm) {
   if (elm !== null) {
-  if (!checkLoginValidity(elm)) {
-    alert(ERR_LOGIN_SHORT_LONG);
-    
-  } else {
-    if (!checkIfLoginExists(elms, elm) ) {
-      elms.push(elm);
-      alert(LOGIN_IS_ADDED);
-           
-          } else {
-      alert(LOGIN_IS_BUSY);
-          }
-  }
+    if (!checkLoginValidity(elm)) {
+      console.log(ERR_LOGIN_SHORT_LONG);
+      
+    } else {
+      if (checkIfLoginExists(elms, elm)) {
+        console.log(LOGIN_IS_BUSY);
 
+      } else {
+        elms.push(elm);
+        console.log(LOGIN_IS_ADDED);
+      }
+    }
+
+  }
 }
-}
- 
+
 addLogin(logins, login);
 console.log(logins);
 
