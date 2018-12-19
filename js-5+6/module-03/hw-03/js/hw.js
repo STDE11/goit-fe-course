@@ -54,13 +54,6 @@ const login = prompt('Введите новый login:');
 
 
 //проверяет количество символов логина
-// const checkLoginValidity = login => 
-//   (4 <= login.length && login.length <= 16);
-
-// //проверяет наличие логина в массиве logins
-// const checkIfLoginExists = (logins, login) => 
-//   logins.includes(login);
-
 const checkLoginValidity = elm =>
   (4 <= elm.length && elm.length <= 16);
 
